@@ -280,7 +280,7 @@ compress_html:
 collections:
   hareline:
     output: true
-    permalink: /:collection/:slug/
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:

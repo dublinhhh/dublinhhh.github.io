@@ -14,13 +14,14 @@ collections:
     label: Hareline
     label_singular: Run
     description: >
-      Only future runs will be shown on the website hareline
+      Only future runs will be shown on the website's hareline
+    summary: "{{date}} {{hash | append: other_hash}} {{number}} {{hares}} {{name}}"
+    sortable_fields: [ 'date', 'hares', 'hash', 'number' ]
     folder: _hareline
     extension: md
     format: frontmatter
-    slug: "{{fields.date}}-{{hares}}"
-    summary: "{{fields.date}} {{hash}} {{number}} {{hares}}"
-    identifier_field: hares
+    identifier_field: hash
+    slug: "{{date}}-{{slug}}"
     create: true
     editor:
       preview: false
@@ -30,14 +31,15 @@ collections:
       - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
       - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
           default: '', hint: 'Only for multi-day hash events', required: false }
-      - { label: 'Hare(s)', name: 'hares', widget: 'string' }
-      - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday' ], required: false }
+      - { label: 'Hare(s)', name: 'title', widget: 'string' }
+      - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday', 'Other' ] }
+      - { label: 'Other Hash', name: other_hash, widget: 'string', required: false }
       - { label: 'Number', name: number, widget: 'string', required: false }
       - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'E.g.: Annual Shed Hash' }
       - { label: 'Map URL', name: 'map_url', widget: 'string', required: false }
       - { label: 'Directions URL', name: 'directions_url', widget: 'string', required: false }
       - { label: 'W3W', name: 'w3w', widget: 'string', required: false }
-      - { label: 'Notes', name: 'body', widget: 'markdown', hint: 'Anything you want to add...' }
+      - { label: 'Notes', name: 'body', widget: 'markdown', hint: 'Anything you want to add...', required: false }
 
   - name: 'pages'
     label: 'Pages'

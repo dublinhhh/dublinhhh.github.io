@@ -3,7 +3,7 @@ backend:
   repo: dublinhhh/website
   branch: main                      # defaults to master
   api_root: https://api.github.com
-  site_domain: dublinhhh.github.io  # use cms.netlify.com for local development
+  site_domain: reliable-kheer-a1fc9b.netlify.com  # use cms.netlify.com for local development
   base_url: https://api.netlify.com
   auth_endpoint: auth
 

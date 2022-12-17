@@ -1,32 +1,34 @@
 backend:
   name: github
   repo: dublinhhh/website
-  branch: main                  # branch to update (optional; defaults to master)
+  branch: main                      # defaults to master
   api_root: https://api.github.com
-  site_domain: cms.netlify.com  # cms.netlify.com for local development
+  site_domain: dublinhhh.github.io  # use cms.netlify.com for local development
   base_url: https://api.netlify.com
   auth_endpoint: auth
 
-media_folder: "assets/images" # Media files will be stored here in the repo
+media_folder: "assets/images"       # Media files will be stored here in the repo
 
 collections:
-
   - name: hareline
     label: Hareline
+    label_singular: Run
+    description: >
+      Date and location are the only required fields (and location can be 'TBD' of course)
     folder: _hareline
-    extension: frontmatter
+    extension: md
     format: frontmatter
-    identifier: name
-    slug: "{{year}}-{{month}}-{{day}}|{{name}}"
-    preview_path_date_field: date
+    slug: "{{fields.date}} {{name}}"
+    summary: "{{fields.date}} {{hash}} {{number}} {{name}}"
+    identifier_field: name
     create: true
     editor:
       preview: false
     fields:
       - { label: 'Location', name: 'location', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
+      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
-      - { label: 'End Date', name: 'end_date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false,
+      - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
           default: '', hint: 'Only for multi-day hash events', required: false }
       - { label: 'Hares', name: 'hares', widget: 'list', field: { label: Hares, name: hare, widget: 'string' } }
       - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday' ], required: false }

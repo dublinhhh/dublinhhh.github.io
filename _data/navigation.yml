@@ -2,7 +2,5 @@
 main:
   - title: "Hareline"
     url: /hareline
-  - title: "About"
-    url: /about
   - title: "Contact"
     url: /contact

@@ -46,6 +46,6 @@ collections:
         name: 'contact'
         file: 'contact.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Contacts' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'contact' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

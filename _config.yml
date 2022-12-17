@@ -18,11 +18,13 @@ minimal_mistakes_skin    : "mint" # "default" "air", "aqua", "contrast", "dark",
 locale                   : "en-IE"
 title                    : "Dublin HHH"
 title_separator          : "-"
-subtitle                 : "A drinking club with a running problem" # site tagline that appears below site title in masthead
+subtitle                 : "A drinking club with a running problem"     # site tagline that appears below site title in masthead
 name                     : "Dublin Hash House Harriers"
 description              : "A drinking club with a running problem"
-url                      : "https://www.dublinhhh.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://www.dublinhhh.com"
+baseurl                  : "/website" # the subpath of your site, e.g. "/blog"
+site_url                 : "https://dublinhhh.github.io/"
+display_url              : "https://dublinhhh.github.io/"
 repository               : dublinhhh/website
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/guinness.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"

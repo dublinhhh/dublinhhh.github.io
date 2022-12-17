@@ -1,0 +1,31 @@
+---
+layout: splash
+permalink: /hareline
+---
+
+{% assign runs = site['hareline'] | sort: date %}
+
+<div>
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Hash</th>
+      <th>Number</th>
+      <th>Location</th>
+      <th>Hares</th>
+    </tr>
+    {%- for run in runs -%}
+    <tr>
+      <td>{{ run.date | date: '%A' }}</td>
+      <td>{{ run.date | date: '%e %B %Y' }}</td>
+      <td>{{ run.time }}</td>
+      <td>{{ run.hash | append: other_hash }}</td>
+      <td>{{ run.number }}</td>
+      <td>{{ run.location }}</td>
+      <td>{{ run.hares }}</td>
+    </tr>
+    {%- endfor -%}
+  </table>
+</div>

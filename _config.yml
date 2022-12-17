@@ -23,8 +23,6 @@ name                     : "Dublin Hash House Harriers"
 description              : "A drinking club with a running problem"
 url                      : "https://www.dublinhhh.com"
 baseurl                  : "/website" # the subpath of your site, e.g. "/blog"
-site_url                 : "https://dublinhhh.github.io/"
-display_url              : "https://dublinhhh.github.io/"
 repository               : dublinhhh/website
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/guinness.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -294,7 +292,7 @@ defaults:
       layout: single
       sidebar:
         - title: "Next Run"
-          text: "At a pub"
+          text: "19 Dec 19:30<br>Lucky Dip<br>The Swan, Dublin 2"
 
   # _hareline
   - scope:

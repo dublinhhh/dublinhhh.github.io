@@ -2,39 +2,22 @@
 layout: single
 ---
 
-<h2>
-  {{ page.date }} {{ page.time }}
-  {% if page.end_date %} - {{ page.end_date }} {% endif %}
-</h2>
-
-{% if page.name %} <h3>"{{ page.name }}"</h3> {% endif %}
-{% if page.hash %} <h3>"{{ page.hash }} #{{- page.number }}</h3> {% endif %}
-
 <div>
     <table>
-        <tr>
-            <th>Hares</th>
-            <td>{{ page.hares | join: ', ' }}</td>
-        </tr>
-        <tr>
-            <th>Location</th>
-            <td>
-                {% if page.map_url %} <a href="{{ page.map_url | urlencode }}"> {% endif %}
-                {{ page.location }}
-                {% if page.map_url %} </a> {% endif %}
-                {% if page.directions_url %} (<a href="{{ page.directions_url | urlencode }}">Directions</a>) {% endif %}
-            </td>
-        </tr>
-        {% if page.w3w %}
-        <tr>
-            <th>W3W</th>
-            <td>
+      <tr><th>Date</th><td>{{ page.date | date: '%A' }} {{ page.date | date: '%e %B %Y' }}</td></tr>
+      <tr><th>Time</th><td>{{ page.time }}</td></tr>
+      <tr><th>Hash</th><td>{{ page.hash | append: other_hash }} {% if page.number %} #{{- page.number }} {% endif %}
+                           {% if page.name %} <p>{{ page.name }} {% endif %}</td></tr>
+      <tr><th>Location</th><td>{% if page.map_url %}<a href="{{ page.map_url }}">{% endif %}{{ page.location }}{% if page.map_url %}</a>{% endif %}</td></tr>
+      {% if page.w3w %}
+      <tr><th>W3W</th>
+          <td>
                 {% capture w3w_url -%}https://w3w.co/{{ page.w3w }}{%- endcapture %}
                 <a href="https://w3w.co/{{ page.w3w }}">{{ page.w3w }}</a>
-            </td>
-        </tr>
-        {% endif %}
-</table>
+          </td>
+      </tr>
+      {% endif %}
+      <tr><th>Hares</th><td>{{ page.hares }}</td></tr>
+      <tr><th>Notes</th><td>{{ page.content }}<td> </tr>
+    </table>
 </div>
-
-{{ page.body }}

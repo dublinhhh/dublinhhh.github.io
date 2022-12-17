@@ -20,7 +20,7 @@ permalink: /hareline
       <td>{{ run.date | date: '%A' }}</td>
       <td>{{ run.date | date: '%e %B %Y' }}</td>
       <td>{{ run.time }}</td>
-      <td>{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}
+      <td><a href="{{ run.url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}</a>
           {% if run.name %} <br>{{ run.name }} {% endif %}</td>
       <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
       <td>{{ run.hares }}</td>

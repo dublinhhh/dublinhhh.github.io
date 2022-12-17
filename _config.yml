@@ -280,22 +280,10 @@ compress_html:
 collections:
   hareline:
     output: true
-    #permalink: /:collection/:slug/
+    permalink: /:collection/:slug/
 
 # Defaults
 defaults:
-  # _posts
-  ##- scope:
-  ##    path: ""
-  ##    type: posts
-  ##  values:
-  ##    layout: single
-  ##    author_profile: true
-  ##    read_time: false
-  ##    comments: false
-  ##    share: true
-  ##    related: true
-
   # _pages
   - scope:
       path: ""

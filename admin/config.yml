@@ -14,13 +14,13 @@ collections:
     label: Hareline
     label_singular: Run
     description: >
-      Date and location are the only required fields (and location can be 'TBD' of course)
+      Only future runs will be shown on the website hareline
     folder: _hareline
     extension: md
     format: frontmatter
-    slug: "{{fields.date}} {{name}}"
-    summary: "{{fields.date}} {{hash}} {{number}} {{name}}"
-    identifier_field: name
+    slug: "{{fields.date}}-{{hares}}"
+    summary: "{{fields.date}} {{hash}} {{number}} {{hares}}"
+    identifier_field: hares
     create: true
     editor:
       preview: false
@@ -30,9 +30,9 @@ collections:
       - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
       - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
           default: '', hint: 'Only for multi-day hash events', required: false }
-      - { label: 'Hares', name: 'hares', widget: 'list', field: { label: Hares, name: hare, widget: 'string' } }
+      - { label: 'Hare(s)', name: 'hares', widget: 'string' }
       - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday' ], required: false }
-      - { label: 'Number', name: number, widget: 'number', value_type: 'int', required: false }
+      - { label: 'Number', name: number, widget: 'string', required: false }
       - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'E.g.: Annual Shed Hash' }
       - { label: 'Map URL', name: 'map_url', widget: 'string', required: false }
       - { label: 'Directions URL', name: 'directions_url', widget: 'string', required: false }

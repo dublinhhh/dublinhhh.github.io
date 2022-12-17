@@ -31,7 +31,7 @@ collections:
       - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
       - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
           default: '', hint: 'Only for multi-day hash events', required: false }
-      - { label: 'Hare(s)', name: 'title', widget: 'string' }
+      - { label: 'Hare(s)', name: 'hares', widget: 'string' }
       - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday', 'Other' ] }
       - { label: 'Other Hash', name: other_hash, widget: 'string', required: false }
       - { label: 'Number', name: number, widget: 'string', required: false }

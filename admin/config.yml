@@ -37,7 +37,6 @@ collections:
       - { label: 'Number', name: number, widget: 'string', required: false }
       - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'E.g.: Annual Shed Hash' }
       - { label: 'Map URL', name: 'map_url', widget: 'string', required: false }
-      - { label: 'Directions URL', name: 'directions_url', widget: 'string', required: false }
       - { label: 'W3W', name: 'w3w', widget: 'string', required: false }
       - { label: 'Notes', name: 'body', widget: 'markdown', hint: 'Anything you want to add...', required: false }
 

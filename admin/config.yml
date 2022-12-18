@@ -13,6 +13,26 @@ backend:
 media_folder: "assets/images"       # Media files will be stored here in the repo
 
 collections:
+  - name: config
+    label: Config
+    editor:
+      preview: false
+    files:
+      - label: Contacts
+        name: contacts
+        file: _data/contacts.yml
+        fields:
+          - label: Contacts
+            label_singular: Contact
+            name: items
+            widget: list
+            fields:
+              - { label: 'Position',     name: 'position', widget: 'string', required: false }
+              - { label: 'Hash Name',    name: 'hashname', widget: 'string', required: false }
+              - { label: 'Mum Calls Me', name: 'name',     widget: 'string', required: false }
+              - { label: 'Email',        name: 'email',    widget: 'string', required: false }
+              - { label: 'Mobile',       name: 'mobile',   widget: 'string', required: false }
+
   - name: hareline
     label: Hareline
     label_singular: Run

@@ -2,3 +2,24 @@ items:
   - position: GM
     hashname: PhD
     name: Adrienne Thomas
+  - position: RA
+    hashname: Darling Clementine
+    name: Eamonn Carroll
+    email: eamonn.carroll@@gmail.com
+  - position: On Sex
+    hashname: Polly
+    name: Richard Hadfield
+    email: hadfieldr@@email.com
+    mobile: 087 3625280
+  - position: Hare Raiser
+    hashname: Stitch
+  - position: Hash Scribe
+  - position: Hash Cash
+    hashname: Dog On
+    name: Allen Williams
+    email: allen.williams555@@gmail.com
+  - position: Hash Haberdash 	
+    hashname: Joy Rider
+    name: Anne McNulty
+  - position: Beer Meister
+    hashname: Padre

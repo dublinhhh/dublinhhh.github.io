@@ -1,0 +1,38 @@
+---
+permalink: /contact
+title: Contacts for Dublin Hash
+classes: wide
+---
+
+<h2>Mismanagement Board</h2>
+
+<div>
+  <table>
+    <tr>
+      <th>Position</th>
+      <th>Hash Name</th>
+      <th>Mum Calls Me</th>
+      <th>Email</th>
+      <th>Mobile</th>
+    </tr>
+    {%- for contact in site.data.contacts.items -%}
+    <tr>
+      <td>{{ contact.position }}</td>
+      <td>{{ contact.hashname }}</td>
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.mobile }}</td>
+    </tr>
+    {%- endfor -%}
+  </table>
+</div>
+
+<h2>Mailing Address</h2>
+<p>
+DUBLIN HASH HOUSE HARRIERS<br>
+c/o Richard POLLY Hadfield<br>
+9 Durham Road<br>
+Sandymount<br>
+DUBLIN 4<br>
+Republic of Ireland
+</p>

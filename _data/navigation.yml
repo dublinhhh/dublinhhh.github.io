@@ -1,6 +1,5 @@
-# main links
 main:
-  - title: "Hareline"
-    url: /hareline
-  - title: "Contact"
+  - title: Contact
     url: /contact
+  - title: Hareline
+    url: /hareline

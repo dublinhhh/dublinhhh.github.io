@@ -1,5 +1,5 @@
 main:
-  - title: Contact
-    url: /contact
   - title: Hareline
     url: /hareline
+  - title: Contact
+    url: /contact

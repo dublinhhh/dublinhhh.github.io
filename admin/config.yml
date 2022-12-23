@@ -93,7 +93,7 @@ collections:
         file: '_pages/hashlinks.md'
         fields:
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Links to other Hash Websites' }
+          - { label: 'Title', name: 'title', widget: 'string', default: 'Links to Other Hash Websites' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - label: 'Tourism'
@@ -101,5 +101,5 @@ collections:
         file: '_pages/tourism.md'
         fields:
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Tourist Information - Dublin' }
+          - { label: 'Title', name: 'title', widget: 'string', default: 'Tourist Information - Dublin' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

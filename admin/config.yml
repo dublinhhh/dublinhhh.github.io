@@ -18,12 +18,12 @@ collections:
     editor:
       preview: false
     files:
-      - label: Contacts
-        name: contacts
-        file: _data/contacts.yml
+      - label: Mismanagement
+        name: mismanagement
+        file: _data/mismanagement.yml
         fields:
-          - label: Contacts
-            label_singular: Contact
+          - label: Mismanagement
+            label_singular: Hasher
             name: items
             widget: list
             fields:

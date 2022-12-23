@@ -281,7 +281,7 @@ collections:
   hareline:
     output: true
     permalink: /:collection/:path/
-  contacts:
+  mismanagement:
 
 # Defaults
 defaults:
@@ -295,6 +295,7 @@ defaults:
         - title: "Next Run"
           text: >
             [19 Dec 19:30<br>Lucky Dip<br>The Swan, Dublin 2](/website/hareline/2022-12-19-i-♥-monday/)
+        - nav: links
 
 
   # _hareline

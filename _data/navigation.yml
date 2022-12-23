@@ -1,5 +1,14 @@
+# top navigation bar links
 main:
   - title: Hareline
     url: /hareline
   - title: Contact
     url: /contact
+
+links:
+  - title: Links
+    children:
+      - title: Other Hashes
+        url: /hashlinks
+      - title: Tourist Info
+        url: /tourism

@@ -14,13 +14,13 @@ classes: wide
       <th>Email</th>
       <th>Mobile</th>
     </tr>
-    {%- for contact in site.data.contacts.items -%}
+    {%- for hasher in site.data.mismanagement.items -%}
     <tr>
-      <th>{{ contact.position }}</th>
-      <td><i>{{ contact.hashname }}</i></td>
-      <td>{{ contact.name }}</td>
-      <td>{{ contact.email }}</td>
-      <td>{{ contact.mobile }}</td>
+      <th>{{ hasher.position }}</th>
+      <td><i>{{ hasher.hashname }}</i></td>
+      <td>{{ hasher.name }}</td>
+      <td>{{ hasher.email }}</td>
+      <td>{{ hasher.mobile }}</td>
     </tr>
     {%- endfor -%}
   </table>

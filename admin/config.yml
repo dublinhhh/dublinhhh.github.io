@@ -1,10 +1,10 @@
 
-site_url    : "https://dublinhhh.github.io/website"
+site_url: "https://dublinhhh.github.io/website"
 
 backend:
   name: github
   repo: dublinhhh/website
-  branch: main                      # defaults to master
+  branch: main
   api_root: https://api.github.com
   site_domain: reliable-kheer-a1fc9b.netlify.com  # use cms.netlify.com for local development
   base_url: https://api.netlify.com
@@ -32,6 +32,18 @@ collections:
               - { label: 'Mum Calls Me', name: 'name',     widget: 'string', required: false }
               - { label: 'Email',        name: 'email',    widget: 'string', required: false }
               - { label: 'Mobile',       name: 'mobile',   widget: 'string', required: false }
+
+      - label: Navigation
+        name: navigation
+        file: _data/navigation.yml
+        fields:
+          - label: Menus
+            singular_label: Menu
+            name: main
+            widget: 'list'
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: URL, name: url, widget: string }
 
   - name: hareline
     label: Hareline
@@ -70,8 +82,22 @@ collections:
     files:
       - label: 'Contacts'
         name: 'contact'
-        file: 'contact.md'
+        file: '_pages/contact.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'hidden', default: 'Contacts' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'contact' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Hash Links'
+        name: 'hashlinks'
+        file: '_pages/hashlinks.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Other Hashes' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Tourism'
+        name: 'tourism'
+        file: '_pages/tourism.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Tourism' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

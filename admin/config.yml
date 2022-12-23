@@ -84,20 +84,22 @@ collections:
         name: 'contact'
         file: '_pages/contact.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Contacts' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'contact' }
+          - { label: 'Title', name: 'title', widget: 'string', default: 'Contacts for Dublin Hash ' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+
       - label: 'Hash Links'
         name: 'hashlinks'
         file: '_pages/hashlinks.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Other Hashes' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Links to other Hash Websites' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+
       - label: 'Tourism'
         name: 'tourism'
         file: '_pages/tourism.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Tourism' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Tourist Information - Dublin' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

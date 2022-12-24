@@ -280,7 +280,7 @@ compress_html:
 collections:
   hareline:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:year/:path/
   mismanagement:
 
 # Defaults

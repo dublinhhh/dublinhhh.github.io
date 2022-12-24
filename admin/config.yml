@@ -109,5 +109,5 @@ collections:
         file: '_pages/site.md'
         fields:
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
-          - { label: 'Title', name: 'title', widget: 'string', default: 'About This Site }
+          - { label: 'Title', name: 'title', widget: 'string', default: 'About This Site' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -12,3 +12,5 @@ links:
         url: /hashlinks
       - title: Tourist Info
         url: /tourism
+      - title: Past Runs
+        url: /archive

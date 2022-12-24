@@ -1,0 +1,44 @@
+---
+layout: splash
+permalink: /archive
+title: Hareline Archive
+---
+
+<ul class="taxonomy__index">
+  {% assign runs = site.hareline | sort: date %}
+  {% assign runsInYear = site.hareline | group_by_exp: 'run', 'run.date | date: "%Y"' %}
+
+  {% for year in runsInYear %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% for year in runsInYear %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      <table>
+      {% for run in year.items %}
+        <tr>
+          <td>{{ run.date | date: '%A' }}</td>
+          <td>{{ run.date | date: '%e %B %Y' }}</td>
+          <td>{{ run.time }}</td>
+          <td><a href="{{ run.url | relative_url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}</
+              {% if run.name %} <br>{{ run.name }} {% endif %}</td>
+          <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
+          <td>{{ run.hares }}</td>
+          <td>{{ run.content }}</td>
+        <tr>
+      {% endfor %}
+      </table>
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
+
+

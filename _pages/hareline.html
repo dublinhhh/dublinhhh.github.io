@@ -4,7 +4,7 @@ permalink: /hareline
 title: Hareline
 ---
 
-{% assign runs = site['hareline'] | sort: date %}
+{% assign runs = site.hareline | sort: date %}
 
 <div>
   <table>
@@ -25,8 +25,14 @@ title: Hareline
           {% if run.name %} <br>{{ run.name }} {% endif %}</td>
       <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
       <td>{{ run.hares }}</td>
-      <td>{{ run.content }}<td>
+      <td>{{ run.content }}</td>
     </tr>
     {%- endfor -%}
   </table>
+</div>
+
+<div>
+  <p class="text-center">
+    <a href="/archive">Past Runs</a>
+  </p>
 </div>

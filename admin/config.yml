@@ -103,3 +103,11 @@ collections:
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
           - { label: 'Title', name: 'title', widget: 'string', default: 'Tourist Information - Dublin' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+
+      - label: 'About This Site'
+        name: 'site'
+        file: '_pages/site.md'
+        fields:
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
+          - { label: 'Title', name: 'title', widget: 'string', default: 'About This Site }
+          - { label: 'Body', name: 'body', widget: 'markdown' }

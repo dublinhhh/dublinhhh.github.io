@@ -1,7 +1,7 @@
 ---
 permalink: /hashlinks
 layout: single
-title: Links to other Hash Websites
+title: Links to Other Hash Websites
 classes: wide
 ---
 ## Links

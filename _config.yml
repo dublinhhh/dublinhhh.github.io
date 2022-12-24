@@ -300,7 +300,7 @@ defaults:
 
   # _hareline
   - scope:
-      path: "/hareline"
+      path: ""
       type: hareline
     values:
       layout: run

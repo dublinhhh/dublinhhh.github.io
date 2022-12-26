@@ -293,8 +293,6 @@ defaults:
       layout: single
       sidebar:
         - title: "Next Run"
-          text: >
-            [26 Dec 11:00<br>Polly<br>Sandymount Green, Dublin 4](/website/hareline/2022-12-26-dublin-h3/)
         - nav: links
 
 

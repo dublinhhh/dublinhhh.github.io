@@ -9,7 +9,7 @@ Current version assembled by [Quicktool](mailto:quicktool@carltons.us), based on
 
 Content supplied by all the half-minds who show up.
 
-Site last updated {{ site.time | date: "“%Y-%m-%d” %H:%M" }}
+Site last updated {{ site.time | date: “%Y-%m-%d %H:%M" }}
 
 Admin
 --

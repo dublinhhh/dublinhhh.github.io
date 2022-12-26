@@ -9,7 +9,6 @@ Current version assembled by [Quicktool](mailto:quicktool@carltons.us), based on
 
 Content supplied by all the half-minds who show up.
 
-
 Admin
 --
 
@@ -17,3 +16,10 @@ You too can help.  If you would like to help maintain this site (e.g. update the
 
 [Admin Interface]({{ 'admin' | relative_url }})
 
+
+Steal This Site
+--
+
+Please feel free to steal, copy, use, plagiarize any or all of this site.
+
+We use [Github Pages](https://pages.github.com/) to host the site. The complete source code lives at [Github](https://github.com/dublinhhh/website).  The [README](https://github.com/dublinhhh/website#readme) file has lots of technical info to help anyone who inherits or copies this site.

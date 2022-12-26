@@ -4,11 +4,9 @@ permalink: /archive
 title: Hareline Archive
 ---
 
+{% assign runsInYear = site.hareline | group_by_exp: 'run', 'run.date | date: "%Y"' %}
 <ul class="taxonomy__index">
-  {% assign runs = site.hareline | sort: date %}
-  {% assign runsInYear = site.hareline | group_by_exp: 'run', 'run.date | date: "%Y"' %}
-
-  {% for year in runsInYear %}
+  {% for year in runsInYear reversed %}
     <li>
       <a href="#{{ year.name }}">
         <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
@@ -18,12 +16,12 @@ title: Hareline Archive
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% for year in runsInYear %}
+{% for year in runsInYear reversed %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
     <div class="entries-{{ entries_layout }}">
       <table>
-      {% for run in year.items %}
+      {% for run in year.items reversed %}
         <tr>
           <td>{{ run.date | date: '%A' }}</td>
           <td>{{ run.date | date: '%e %B %Y' }}</td>

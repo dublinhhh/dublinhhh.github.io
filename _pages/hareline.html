@@ -4,8 +4,11 @@ permalink: /hareline
 title: Hareline
 ---
 
-{% assign runs = site.hareline | sort: date %}
-{% assign current = "now" | date: "%Y-%m-%d" %}
+{% comment %}
+This selects all runs whose date is after the time the site is generated.  The site is
+regenerated each daily (shortly after midnight), so this picks up all future runs
+{% endcomment %}
+{% assign runs = site.hareline | where_exp: "item", "item.date >= site.time" %}
 
 <div>
   <table>
@@ -17,21 +20,18 @@ title: Hareline
       <th>Hares</th>
       <th></th>
     </tr>
-    {%- for run in runs -%}
-      {% assign run_day = run.date | date: "%Y-%m-%d" %}
-      {% if run_day >= current %}
-        <tr>
-          <td>{{ run.date | date: '%A' }}</td>
-          <td>{{ run.date | date: '%e %B %Y' }}</td>
-          <td>{{ run.time }}</td>
-          <td><a href="{{ run.url | relative_url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}</
-              {% if run.name %} <br>{{ run.name }} {% endif %}</td>
-          <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
-          <td>{{ run.hares }}</td>
-          <td>{{ run.content }}</td>
-        </tr>
-      {% endif %}
-    {%- endfor -%}
+    {% for run in runs %}
+      <tr>
+        <td>{{ run.date | date: '%A' }}</td>
+        <td>{{ run.date | date: '%e %B %Y' }}</td>
+        <td>{{ run.time }}</td>
+        <td><a href="{{ run.url | relative_url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}</
+            {% if run.name %} <br>{{ run.name }} {% endif %}</td>
+        <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
+        <td>{{ run.hares }}</td>
+        <td>{{ run.content }}</td>
+      </tr>
+    {% endfor %}
   </table>
 </div>
 

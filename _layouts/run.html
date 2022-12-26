@@ -18,6 +18,8 @@ layout: single
       </tr>
       {% endif %}
       <tr><th>Hares</th><td>{{ page.hares }}</td></tr>
-      <tr><th>Comments</th><td>{{ page.content }}<td> </tr>
+      {% if page.content.size > 1 %}
+      <tr><th>Comments</th><td>{{ page.content }}<td></tr>
+      {% endif %}
     </table>
 </div>

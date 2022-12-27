@@ -302,3 +302,6 @@ defaults:
       type: hareline
     values:
       layout: run
+      sidebar:
+        - title: "Next Run"
+        - nav: links

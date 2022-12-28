@@ -1,0 +1,21 @@
+name: Update last_modified_at
+
+on: [push]
+
+jobs:
+  update-last-modified-at:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update last_modified_at field
+        run: |
+          for file in $(git diff --name-only HEAD~1 HEAD | grep '.md$'); do
+            sed -i "s/^last_modified_at: .*$/last_modified_at: $(date +%Y-%m-%d)/" $file
+          done
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Update last_modified_at field"
+          git push

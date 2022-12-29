@@ -2,7 +2,7 @@ name: Re-build website daily
 
 on:
   schedule:
-    - cron: '23 0 * * *'
+    - cron: '43 0 * * *'
 
 jobs:
   build:
@@ -15,5 +15,4 @@ jobs:
           ruby-version: 2.7
           # runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
-      - run: gem install jekyll
       - run: jekyll build

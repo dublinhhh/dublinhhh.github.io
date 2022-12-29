@@ -3,6 +3,7 @@ permalink: /tourism
 title: Tourist Information - Dublin
 layout: single
 classes: wide
+last_modified_at: 1999-01-01
 ---
 
 <ul>

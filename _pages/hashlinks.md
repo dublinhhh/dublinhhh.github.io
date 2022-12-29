@@ -5,8 +5,6 @@ title: Links to Other Hash Websites
 classes: wide
 last_modified_at: 1999-01-01
 ---
-## Links
-
 * [Flying Booger's Half Mind Catalogue](http://half-mind.com/index.php)
 
   * Flying Booger gives full coverage of World Hash events as well as contacts to all USA hashes and many international groups

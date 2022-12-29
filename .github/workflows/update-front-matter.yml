@@ -6,10 +6,10 @@ jobs:
   update-last-modified-at:
     runs-on: ubuntu-latest
     steps:
-      - name: Update front matter
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
+      - name: Update front matter
         run: |
           for file in $(git diff --name-only HEAD~1 HEAD | grep '.md$'); do
             # update any last_modified_at field to the date of the commit

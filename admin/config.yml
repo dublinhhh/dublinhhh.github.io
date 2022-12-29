@@ -63,6 +63,7 @@ collections:
     fields:
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime', default: '', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+      - { label: 'Last Modified', name: 'last_modified_at', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
       - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
           default: '', hint: 'Only for multi-day hash events', required: false }

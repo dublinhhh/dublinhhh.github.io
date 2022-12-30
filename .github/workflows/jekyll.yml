@@ -68,3 +68,12 @@ jobs:
       - name: 'Deploy to GitHub Pages'
         id: deployment
         uses: actions/deploy-pages@v1
+
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cleanup
+        uses: glassechidna/artifact-cleaner@master
+        with:
+          minimumAge: 86400           # remove all artifacts at least one day old
+

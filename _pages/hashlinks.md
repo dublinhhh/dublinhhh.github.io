@@ -3,7 +3,7 @@ permalink: /hashlinks
 layout: single
 title: Links to Other Hash Websites
 classes: wide
-last_modified_at: 1999-01-01
+last_modified_at: 2022-12-30
 ---
 * [Flying Booger's Half Mind Catalogue](http://half-mind.com/index.php)
 

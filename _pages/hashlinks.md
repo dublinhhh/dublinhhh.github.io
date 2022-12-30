@@ -10,7 +10,7 @@ last_modified_at: 1999-01-01
   * Flying Booger gives full coverage of World Hash events as well as contacts to all USA hashes and many international groups
 * [Register Your Hash Name](http://www.harrier.ch/harrier/Names/Names.html)
 
-  * Neptunus is maintaining a list of hash names. Put your on the list or add somebody else's. 
+  * Neptunus is maintaining a list of hash names. Put your name on the list or add somebody else's. 
 * [Hash Heritage Website](http://www.thehashhouse.org/)
 
   * Trace your hash's founding hash

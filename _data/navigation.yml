@@ -5,16 +5,15 @@ main:
   - title: Contact
     url: /contact
 
+# sidebar links
 links:
-  - title: Links
-    children:
-      - title: Other Hashes
-        url: /hashlinks
-      - title: Tourist Info
-        url: /tourism
-      - title: Run Archive
-        url: /archive
-      - title: Original Site
-        url: "https://www.angelfire.com/ak/DublinHHH"
-      - title: About This Site
-        url: /site
+  - title: Other Hashes
+    url: /hashlinks
+  - title: Tourist Info
+    url: /tourism
+  - title: Run Archive
+    url: /archive
+  - title: Original Site
+    url: "https://www.angelfire.com/ak/DublinHHH"
+  - title: About This Site
+    url: /site

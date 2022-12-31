@@ -13,8 +13,41 @@ backend:
 media_folder: "assets/images"       # Media files will be stored here in the repo
 
 collections:
-  - name: config
-    label: Config
+  - name: hareline
+    label: Hareline
+    label_singular: Run
+    description: >
+      All runs appear here, but only future runs will be shown on the website's hareline
+    summary: "{{date}} {{hash | append: other_hash}} {{number}} {{hares}} {{name}}"
+    sortable_fields: [ 'date', 'hares', 'hash', 'number' ]
+    folder: _hareline
+    extension: md
+    format: frontmatter
+    identifier_field: hash
+    slug: "{{date}}-{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime', default: '', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
+                 hint: 'If you need to change the date _after_ saving, you must add a new run and delete the incorrect one' }
+      - { label: 'Last Modified', name: 'last_modified_at', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+      - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
+      - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
+                 default: '', hint: 'Only for multi-day hash events', required: false }
+      - { label: 'Hare(s)', name: 'hares', widget: 'string' }
+      - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday', 'Other' ],
+                 hint: 'If you need to change the hash _after_ saving, you must add a new run and delete the incorrect one' }
+      - { label: 'Other Hash', name: other_hash, widget: 'string', required: false }
+      - { label: 'Number', name: number, widget: 'string', required: false }
+      - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'E.g.: Annual Shed Hash' }
+      - { label: 'Map URL', name: 'map_url', widget: 'string', required: false }
+      - { label: 'W3W', name: 'w3w', widget: 'string', required: false }
+      - { label: 'Comments', name: 'body', widget: 'markdown', hint: 'Anything you want to add...', required: false }
+
+  - name: contacts
+    label: Contacts
     editor:
       preview: false
     files:
@@ -33,48 +66,39 @@ collections:
               - { label: 'Email',        name: 'email',    widget: 'string', required: false }
               - { label: 'Mobile',       name: 'mobile',   widget: 'string', required: false }
 
+  - name: header
+    label: Header
+    editor:
+      preview: false
+    files:
       - label: Navigation
         name: navigation
         file: _data/navigation.yml
         fields:
           - label: Menus
-            singular_label: Menu
-            name: main
-            widget: 'list'
+            label_singular: Menu
+            name: 'main'
+            widget: list
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'URL', name: 'url', widget: 'string' }
 
-  - name: hareline
-    label: Hareline
-    label_singular: Run
-    description: >
-      Only future runs will be shown on the website's hareline
-    summary: "{{date}} {{hash | append: other_hash}} {{number}} {{hares}} {{name}}"
-    sortable_fields: [ 'date', 'hares', 'hash', 'number' ]
-    folder: _hareline
-    extension: md
-    format: frontmatter
-    identifier_field: hash
-    slug: "{{date}}-{{slug}}"
-    create: true
+  - name: sidebar
+    label: Sidebar
     editor:
       preview: false
-    fields:
-      - { label: 'Location', name: 'location', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime', default: '', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
-      - { label: 'Last Modified', name: 'last_modified_at', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
-      - { label: 'Time', name: 'time', widget: 'string', default: '19:30', required: false }
-      - { label: 'End Date', name: 'end_date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false,
-          default: '', hint: 'Only for multi-day hash events', required: false }
-      - { label: 'Hare(s)', name: 'hares', widget: 'string' }
-      - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday', 'Other' ] }
-      - { label: 'Other Hash', name: other_hash, widget: 'string', required: false }
-      - { label: 'Number', name: number, widget: 'string', required: false }
-      - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'E.g.: Annual Shed Hash' }
-      - { label: 'Map URL', name: 'map_url', widget: 'string', required: false }
-      - { label: 'W3W', name: 'w3w', widget: 'string', required: false }
-      - { label: 'Comments', name: 'body', widget: 'markdown', hint: 'Anything you want to add...', required: false }
+    files:
+      - label: Links
+        name: links
+        file: _data/navigation.yml
+        fields:
+          - label: Links
+            label_singular: Link
+            name: 'links'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'URL', name: 'url', widget: 'string' }
 
   - name: 'pages'
     label: 'Pages'

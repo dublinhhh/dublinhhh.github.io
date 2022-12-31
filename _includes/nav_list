@@ -1,0 +1,19 @@
+{% assign navigation = site.data.navigation[include.nav] %}
+{% assign nav_title = "Links" %}
+
+<nav class="nav__list">
+  {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+  <ul class="nav__items">
+      <li>
+        <span class="nav__sub-title">{{ nav_title }}</span>
+
+        <ul>
+          {% for child in navigation %}
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+  </ul>
+</nav>

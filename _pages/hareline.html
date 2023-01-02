@@ -9,7 +9,8 @@ last_modified_at: 1999-01-01
 This selects all runs whose date is after the time the site is generated.  The site is
 regenerated each daily (shortly after midnight), so this picks up all future runs
 {% endcomment %}
-{% assign runs = site.hareline | where_exp: "item", "site.time <= item.date" %}
+{% assign site_date = site.time | date: '%Y%m%d' | plus: 0 %}
+{% assign runs = site.hareline | where_exp: "item", "site_date <= item.ordinal_date" %}
 
 <div>
   <table>

@@ -46,6 +46,8 @@ begin
             gallery[index]['url'] = photo_data['url']
             gallery[index]['image_path'] = photo_data['image_path']
             gallery[index]['title'] = photo_data['title']
+
+            run_data['last_modified_at'] = Time.now.strftime('%Y-%m-%d')
           end
 
           # write the run data with updated gallery

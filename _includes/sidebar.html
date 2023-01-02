@@ -11,7 +11,7 @@
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
       {% if s.title %}
         {% comment %} This extracts the next run and displays a link {% endcomment %}
-        {% assign runs = site.hareline | where_exp: "item", "item.date >= site.time" %}
+        {% assign runs = site.hareline | where_exp: "item", "site.time <= item.date" %}
         {% assign run = runs[0] %}
         <p><a href={{ run.url | relative_url }}>{{ run.date | date: "%e %b" }} {{ run.time }}<br>{{ run.hares }}<br>{{ run.location }}</a>
       {% endif %}

@@ -32,7 +32,7 @@ jobs:
           cache-version: 0          # Increment this number if you need to re-download cached gems
       - name: 'Update front matter'
         run: |
-          for file in $(git diff --name-only HEAD~1 HEAD | grep '.md"?$'); do
+          for file in $(git diff --name-only HEAD~1 HEAD | grep -E '.md"?$'); do
             echo $file
 
             # update any last_modified_at field to the date of the commit

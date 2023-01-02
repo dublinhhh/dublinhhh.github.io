@@ -33,6 +33,8 @@ jobs:
       - name: 'Update front matter'
         run: |
           for file in $(git diff --name-only HEAD~1 HEAD | grep '.md$'); do
+            echo $file
+
             # update any last_modified_at field to the date of the commit
             sed -i "s/^last_modified_at: .*$/last_modified_at: $(date +%Y-%m-%d)/" $file
 
@@ -55,7 +57,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v2
       - name: 'Build with Jekyll'   # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: |
+          bundle exec jekyll --version
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: 'Upload artifact'      # Automatically uploads an artifact from the './_site' directory by default

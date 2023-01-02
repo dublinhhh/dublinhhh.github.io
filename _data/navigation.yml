@@ -9,6 +9,8 @@ main:
 links:
   - title: Other Hashes
     url: /hashlinks
+  - title: Photos
+    url: /photos
   - title: Tourist Info
     url: /tourism
   - title: Run Archive

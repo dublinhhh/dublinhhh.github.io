@@ -281,6 +281,9 @@ collections:
   hareline:
     output: true
     permalink: /:collection/:path/
+  photos:
+    output: true
+    permalink: /:collection/:path/
   mismanagement:
 
 # Defaults

@@ -1,0 +1,39 @@
+---
+layout: splash
+permalink: /photos
+title: Photos
+last_modified_at: 2023-01-01
+---
+
+{% assign photosInYear = site.photos | group_by_exp: 'photo', 'photo.date | date: "%Y"' %}
+<ul class="taxonomy__index">
+  {% for year in photosInYear reversed %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<p>Work in progress...</p>
+
+{% assign gallery_layout = 'third' %}
+{% for year in photosInYear reversed %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      <figure class="{{ gallery_layout }}">
+      {% for photo in year.items reversed %}
+        {% if photo.image_path %}
+          <img src="{{ photo.image_path | relative_url }}"
+               {% if img.title %}title="{{ photo.title }}"{% endif %}
+               {% if img.alt %}alt="{{ photo.alt }}" {% endif %}>
+        {% endif %}
+      {% endfor %}
+      </figure>
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
+

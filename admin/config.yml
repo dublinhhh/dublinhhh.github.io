@@ -46,6 +46,28 @@ collections:
       - { label: 'W3W', name: 'w3w', widget: 'string', required: false }
       - { label: 'Comments', name: 'body', widget: 'markdown', hint: 'Anything you want to add...', required: false }
 
+  - name: photos
+    label: Photos
+    label_singular: Photo
+    summary: "{{date}} {{title}}"
+    sortable_fields: [ 'date', 'hash', 'location' ]
+    folder: _photos
+    extension: md
+    format: frontmatter
+    slug: "{{date}}-{{title}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', hint: 'Will be displayed as the photo caption; needs to be different for each photo' }
+      - { label: 'Date', name: 'date', widget: 'datetime', default: '', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', required: false,
+                 hint: 'If you supply a hash and date, the photo will also show up on the run page' }
+      - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday' ], required: false,
+                 hint: 'If you supply a hash and date, the photo will also show up on the run page' }
+      - { label: 'Location', name: 'location', widget: 'string', required: false }
+      - { label: 'External URL', name: 'url', widget: 'string', required: false, hint: 'If photo is hosted externally' }
+      - { label: 'Photo', name: 'image_path', widget: 'image', required: false, hint: 'Uploads a photo' }
+
   - name: contacts
     label: Contacts
     editor:

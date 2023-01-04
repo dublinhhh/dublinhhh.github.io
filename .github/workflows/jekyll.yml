@@ -30,7 +30,7 @@ jobs:
           cache-version: 0          # Increment this number if you need to re-download cached gems
       - name: 'Update front matter'
         run: |
-          git log -n 1 --pretty="format:" --name-only -z | while read -d '' file ; do
+          git log -n 1 --pretty="format:" --name-only -z | while read -d $'\0' file ; do
             if [[ "$file" =~ '.md$' ]] && [[ -e "$file" ]] ; then
               echo $file
 

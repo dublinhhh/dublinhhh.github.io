@@ -33,7 +33,7 @@ jobs:
       - name: 'Update front matter'
         run: |
           git diff -z --name-only HEAD~1 HEAD | while read -d '' file ; do
-            if [[ "$file" =~ '.md$' ]] then
+            if [[ "$file" =~ '.md$' ]]; then
               echo $file
 
               # update any last_modified_at field to the date of the commit

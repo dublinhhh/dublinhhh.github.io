@@ -3,7 +3,7 @@ permalink: /tourism
 layout: single
 title: Tourist Information - Dublin
 classes: wide
-last_modified_at: 2022-12-29
+last_modified_at: 2023-01-04
 ---
 * [Dublin Accommodation and Stuff](http://www.visitdublin.com)
 * [Irish Rail Guide including the DART](http://www.irishrail.ie)

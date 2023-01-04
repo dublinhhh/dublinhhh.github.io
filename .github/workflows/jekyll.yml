@@ -31,7 +31,7 @@ jobs:
       - name: 'Update front matter'
         run: |
           git log -n 1 --pretty="format:" --name-only -z | xargs -0 -n 1 | while read file ; do
-            if [[ "$file" =~ '.md$' ]] && [[ -e "$file" ]] ; then
+            if [[ "$file" =~ .md$ ]] && [[ -e "$file" ]] ; then
               echo $file
 
               # update any last_modified_at field to the date of the commit

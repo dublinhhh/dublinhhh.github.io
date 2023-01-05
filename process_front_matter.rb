@@ -3,7 +3,6 @@
 # this script takes one filename as argument and processes the frontmatter
 # - sets the last_modified_at time to the date this is run (unless the '-n' argument is supplied)
 # - sets the ordinal date field if there's a date attribute
-# - quotes the time if there's a time attribute
 # - If the file is a photo record (because it has '_photos/' in its file name) and it also has a date and a hash,
 #   it is added to the photo gallery for the corresponding run
 
@@ -13,7 +12,7 @@ require 'safe_yaml'
 # taken from jekyll
 YAML_FRONT_MATTER_REGEXP = %r!\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)!m.freeze
 
-# reads contents of filename, returns body and YAML frontmatter if present
+# read contents of filename, returns body and YAML frontmatter if present
 def load_file(filename)
   data = { }
   body = File.read(filename)
@@ -25,7 +24,7 @@ def load_file(filename)
   return body, data
 end
 
-# writes YAML frontmatter and contents to filename
+# write YAML frontmatter and contents to filename
 def save_file(filename, data, body)
   File.open(filename, 'w') do |file|
     file.puts(YAML.dump(data))

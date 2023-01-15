@@ -26,6 +26,9 @@ last_modified_at: 2023-01-04
 * [Go To The Hash Website](http://gotothehash.net)
 
   * A good directory of what's happening
+* [Hash House Harriers Events](https://www.facebook.com/groups/hashhouseharriersevents/)
+
+  * A﻿ public Facebook page listing hash events around the world
 * [Aussie Hash Home Page](http://www.hhh.asn.au/)
 * [Hong Kong Home Page](http://hkhash.com/)
 

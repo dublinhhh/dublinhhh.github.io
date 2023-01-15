@@ -1,11 +1,8 @@
-# top navigation bar links
 main:
   - title: Hareline
     url: /hareline
   - title: Contact
     url: /contact
-
-# sidebar links
 links:
   - title: Other Hashes
     url: /hashlinks
@@ -16,6 +13,8 @@ links:
   - title: Run Archive
     url: /archive
   - title: Original Site
-    url: "https://www.angelfire.com/ak/DublinHHH"
+    url: https://www.angelfire.com/ak/DublinHHH
+  - title: Hash History
+    url: /history
   - title: About This Site
     url: /site

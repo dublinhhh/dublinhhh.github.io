@@ -60,12 +60,12 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', hint: 'Will be displayed as the photo caption; needs to be different for each photo' }
       - { label: 'Date', name: 'date', widget: 'datetime', default: '', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, required: false,
-                 hint: 'If you supply a hash and date, the photo will also show up on the run page' }
+                 hint: 'If you supply a date, the photo will also show up on the run page' }
       - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday' ], required: false,
-                 hint: 'If you supply a hash and date, the photo will also show up on the run page' }
+                 hint: 'Only used if there is more than one hash on the given date' }
       - { label: 'Location', name: 'location', widget: 'string', required: false }
       - { label: 'External URL', name: 'url', widget: 'string', required: false, hint: 'If photo is hosted externally' }
-      - { label: 'Photo', name: 'image_path', widget: 'image', required: false, hint: 'Uploads a photo' }
+      - { label: 'Photo', name: 'image_path', widget: 'image', required: false, hint: 'If photo is uploaded to this site' }
 
   - name: contacts
     label: Contacts
@@ -148,6 +148,14 @@ collections:
         fields:
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
           - { label: 'Title', name: 'title', widget: 'string', default: 'Tourist Information - Dublin' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+      - label: 'Hash History'
+        name: 'history'
+        file: '_pages/history.md'
+        fields:
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'single' }
+          - { label: 'Title', name: 'title', widget: 'string', default: 'Hash House Harriers History' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - label: 'About This Site'

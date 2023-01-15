@@ -33,6 +33,11 @@ def save_file(filename, data, body)
   end
 end
 
+# beware: this is fragile, it must match the config in admin/config.yml
+def run_pathname(date, hash)
+  Jekyll::Utils.slugify("_hareline/#{date}-#{hash}.md", mode: 'raw')
+end
+
 begin
   update_last_modified = true
   if ARGV[0] == '-n'                                      # don't update last modified date (used when re-syncing)
@@ -66,10 +71,22 @@ begin
 
   # if the file is a photo record and there's a matching run, add this photo to its gallery
   if filename.include? '_photos/'
-    # we're done with original 'filename', so we'll re-use it so that err messages are clear
-    # beware: this is fragile, it must match the config in admin/config.yml
-    filename = Jekyll::Utils.slugify("_hareline/#{data['date']}-#{data['hash']}.md", mode: 'raw')
+    date = data['date']
+    hashes = [ 'Dublin H3', 'I ♥ Monday' ]
+    matches = hashes.select do |hash|
+      File.exist?(run_pathname(date, hash))
+    end
 
+    if matches.size == 1            # Only 1 hash on the supplied date, don't bother using the hash name input
+      hash = matches.first
+    else                            # More than 1 match, use the supplied hash name
+      hash = data['hash']
+    end
+
+    # we're done with original 'filename', so we'll re-use it so that err messages are clear
+    filename = run_pathname(date, hash)
+
+    # as long as the input is on the list of hashes above it will exist, but verify here just in case
     if File.exist?(filename)                          # get the run data if there's a corresponding run
       run_body, run_data = load_file(filename)
       original_run_data = run_data.dup

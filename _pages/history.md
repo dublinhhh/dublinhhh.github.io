@@ -1,51 +1,56 @@
 ---
+permalink: /history
 title: Hash History
+layout: single
+classes: wide
 last_modified_at: '2023-01-15'
 ---
-## I﻿nterhash
+## Interhash
 
-G﻿oToTheHash has a very nice [Interhash History page](https://gotothehash.net/history/interhash.html).  From that page there's a 
+GoToTheHash has a very nice [Interhash History page](https://gotothehash.net/history/interhash.html).  From that page there's a
 From that page there's copy of a [1978 Washington Post report on the first Interhash](https://gotothehash.net/history/Interhash/washpost78.pdf).
 
-#﻿# Hash Origin
+## Hash Origin
 
-T﻿he article below is reprinted without permission from the 2004 World Interhash 'Mag in a Bag', originally written in 1992 and updated in 1996 by Mike Lyons (On-Sec. 'Mother' Hash), from copious research material provided by John Duncan. Statistics brought further up to date by WIH 2004.
+The article below is reprinted without permission from the 2004 World Interhash 'Mag in a Bag', originally written in 1992 and updated in 1996 by Mike Lyons (On-Sec. 'Mother' Hash), from copious research material provided by John Duncan. Statistics brought further up to date by WIH 2004.
 
--﻿----
+-----
 
 ## The Hash House
 
 The 'Hash House' was the mildly derogatory nickname given (for its unimaginative, monotonous food) to the Selangor Club Chambers, by the British Civil Servants and businessman who lived and dined there. Originally, the ground floor housed the main Selangor Club dining room, and between the two World Wars it became a so- cial center of the times, used regularly for lunch time meals by the members who worked in the immediate vicinity.
 
-Situated close to and behind the present Selangor Club, its function changed after independence in 1965 and it became a key office for the local Water Board, the place where all Kuala Lumpur (K.L.) residents came to pay their water bills. Sadly, it gave way to the relentless march of time around 1974, being bulldozed to the ground under the northbound lane of Jalan Kuching. The buildings housing the original stables and servants quar- ters are still in existence.
+Situated close to and behind the present Selangor Club, its function changed after independence in 1965 and it became a key office for the local Water Board, the place where all Kuala Lumpur (K.L.) residents came to pay their water bills. Sadly, it gave way to the relentless march of time around 1974, being bulldozed to the ground under the northbound lane of Jalan Kuching. The buildings housing the original stables and servants quarters are still in existence.
 
 ### Ancient Harriers
 
-The idea of Harriers chasing paper was not new to Malaya in 1938, as there had been such 'Hare and Hounds' clubs before in Kuala Lumpur and Johore Bahru, and there were clubs in existence in Malacca and lpoh (the Kinta Harriers) at the time. "Horse" Thomson (one of the KLH3 founding fathers) recalled being invit- ed on a run, shortly after his arrival in Jobore Bahru in 1932, which chased a paper trail and followed basic Hash rules every week, but the club was so magically organized that it had no name. The club flourished in the early 1930's but is believed to have died out around 1935.
+The idea of Harriers chasing paper was not new to Malaya in 1938, as there had been such 'Hare and Hounds' clubs before in Kuala Lumpur and Johore Bahru, and there were clubs in existence in Malacca and lpoh (the Kinta Harriers) at the time. "Horse" Thomson (one of the KLH3 founding fathers) recalled being invited on a run, shortly after his arrival in Jobore Bahru in 1932, which chased a paper trail and followed basic Hash rules every week, but the club was so magically organized that it had no name. The club flourished in the early 1930's but is believed to have died out around 1935.
 
-The other branch of our ancestry comes from Malac- ca, where A. S. ('G') Gispert was posted in 1937 and joined a club called the Springgil Harriers, who also operated weekly under Hash rules and are believed to have been formed in 1935. Some months later, 'Torch' Bennett visited him and came as a guest on a few runs.
+The other branch of our ancestry comes from Malacca, where A. S. ('G') Gispert was posted in 1937 and joined a club called the Springgil Harriers, who also operated weekly under Hash rules and are believed to have been formed in 1935. Some months later, 'Torch' Bennett visited him and came as a guest on a few runs.
 
 ### Hash House Harriers
 
 By 1938, Thomson, Lee, Bennett and Gispert had all moved to K.L, and founded their own club, following the rules they had learnt elsewhere. It was 'G' Gispert who was apparently the moving spirit behind the club, though he never acted as On-Sec or a Joint Master. There were probably only about a dozen members of the original HHH, including A. S. ('C') Gispert, Cecil Lee, 'Horse' Thomson, 'Torch' Bennett, Morris Edgar, Eric Galvin, H.M. Doig, John Barrett and M.C. Hay.
 
-The original 'Hash House', circa 1938
+<figure>
+  <img src="/assets/images/original-hash-house-kuala-lumpur.jpg" alt="Original Hash House" style="width:100%">
+  <figcaption>The original 'Hash House', circa 1938</figcaption>
+</figure>
 
 They were soon joined by a few others, including Frank Woodward, Philip Wickens, Lew Davidson and E.A. Ross. It is not clear that the club actually had a name at the very beginning, but Gispert is credited with proposing 'The Hash House Harriers' when the Registrar of Societies required the gathering to be legally registered.
 
 'Torch' Bennett technically missed being a founder member, because he was then on leave, but on his return he introduced the fist necessary organization - a bank account, a balance sheet and some system. More importantly, he seems, with Philip Wickens who joined later in 1939, to have helped to keep things going immediately after the war.
 
-Sadly, Gispert had only a short time with his extraordinary creation, being killed in the fighting on Singapore Island on February 11th, 1942, whilst serving with the Argylls. Of the original founding fathers of the HHH, Cecil Lee and 'Horse' Thompson are still alive, though sadly no longer hashing. The founding members were all British, although Gispert's origins were Spanish, his parents having migrated to London some time before be was born. Extraordinarily both he and Bennett were accountants, as were Paul Barnard and Jack Bridewell who made a significant contribution to our activities of later years. Some Hash psychiatrist should investigate whether this type of work leads to extreme forms of escapism.
-The HHH duly celebrated its 100th run on 15 August 1941, but only 17 runs later was forced into temporary hibernation by the arrival of the Japanese.
+Sadly, Gispert had only a short time with his extraordinary creation, being killed in the fighting on Singapore Island on February 11th, 1942, whilst serving with the Argylls. Of the original founding fathers of the HHH, Cecil Lee and 'Horse' Thompson are still alive, though sadly no longer hashing. The founding members were all British, although Gispert's origins were Spanish, his parents having migrated to London some time before be was born. Extraordinarily both he and Bennett were accountants, as were Paul Barnard and Jack Bridewell who made a significant contribution to our activities of later years. Some Hash psychiatrist should investigate whether this type of work leads to extreme forms of escapism.  The HHH duly celebrated its 100th run on 15 August 1941, but only 17 runs later was forced into temporary hibernation by the arrival of the Japanese.
 
 ### Postwar Rebirth
 
-Post World War II, it was nearly 12 months before the survivors reassembled 'Torch' Bennett put in a claim for the lost hash mugs, a tin bath and two old bags, on the
-fund set up with the proceeds from confiscated Japanese property and run No, 1 was a trot around the race-course in August, 1946. Subsequent to the 1,000th post war run the celebrations surrounding it were considered to be such a success that the 117 official pre-war runs were added to the total so that we could celebrate the 2,000th run as soon as possible.
+Post World War II, it was nearly 12 months before the survivors reassembled 'Torch' Bennett put in a claim for the lost hash mugs, a tin bath and two old bags, on the fund set up with the proceeds from confiscated Japanese property and run No, 1 was a trot around the race-course in August, 1946. Subsequent to the 1,000th post war run the celebrations surrounding it were considered to be such a success that the 117 official pre-war runs were added to the total so that we could celebrate the 2,000th run as soon as possible.
 
 With the advent of the Emergency in 1948, the Hash was automatically in bad official odor, as their activities were generally illegal in terms of the curfew imposed on most of the areas around Kuala Lumpur, and in the years 1948-51 they maintained a precarious existence at best. The turn round came with the famous bandit incident at Cheras.
 
-This has been widely misreported, but what actually happened was that below where the Lady Tempter Hospital is now, in an area that was then rubber and secondary jungle, the Hares on a darkening and rainy evening came across some men wrapped in ground sheets sleeping on the ground They turned back to alert the pack and speed on to the Cheras police station, alerting the army, who laid ambushes on tracks leading out of the area and first thing the following morning bagged three bandits trying to break out. One of them was found to have a substantial price on his head and the bounty was sufficient to buy both the hares a new car, though the hounds were apparently of the opinion that it should have been shared amongst them all
+This has been widely misreported, but what actually happened was that below where the Lady Tempter Hospital is now, in an area that was then rubber and secondary jungle, the Hares on a darkening and rainy evening came across some men wrapped in ground sheets sleeping on the ground They turned back to alert the pack and speed on to the Cheras police station, alerting the army, who laid ambushes on tracks leading out of the area and first thing the following morning bagged three bandits trying to break out. One of them was found to have a substantial price on his head and the bounty was sufficient to buy both the hares a new car, though the hounds were apparently of the opinion that it should have been shared amongst them all.
+
 Other colorful incidents related by Cecil Lee, include how 'Torch' Bennett once nearly drowned in quicksand, and how on one memorable occasion the erstwhile unathletic 'G' was actually leading the pack: sadly his moment of glory was short lived as the paper trail turned to be false. Swimming would seem to have been an unofficial prerequisite for all Hashmen too, for Cecil remembers having had to swim across a mining pool in order to get home after being lost on one occasion, and on another it is reported that several Hashmen ran in to a stream where bathed some unsuspecting Malay maidens. The girls screamed: their menfolk came hurtling to the rescue with unsheathed parangs flashing, and the errant Hashmen broke land speed records in their eagerness to clear the scene.
 
 ### The Hash Spreads Out

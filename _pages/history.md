@@ -1,9 +1,9 @@
 ---
-permalink: /history
+permalink: "/history"
 title: Hash History
 layout: single
 classes: wide
-last_modified_at: '2023-01-15'
+last_modified_at: '2023-01-16'
 ---
 ## Interhash History
 

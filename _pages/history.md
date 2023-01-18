@@ -3,7 +3,7 @@ permalink: "/history"
 title: Hash History
 layout: single
 classes: wide
-last_modified_at: '2023-01-17'
+last_modified_at: '2023-01-18'
 ---
 ## Interhash History
 

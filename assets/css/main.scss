@@ -10,5 +10,18 @@ $sans-serif-narrow  : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "
 $global-font-family : $serif;
 $header-font-family : $serif;
 
+// $body-color, $background-color, $text-color, $link-color, and $masthead-link-color
+// copied from mint skin; 046307 is emerald green
+//$background-color: #f3f6f6 !default;
+$text-color: #046307;
+$muted-text-color: #046307;
+//$primary-color: #11999e !default;
+$border-color: mix(#fff, #046307, 75%);
+$footer-background-color: #046307;
+//$link-color: #11999e !default;
+//$masthead-link-color: $text-color !default;
+//$masthead-link-color-hover: $text-color !default;
+//$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

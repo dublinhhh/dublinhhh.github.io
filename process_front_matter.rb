@@ -89,7 +89,7 @@ begin
     # as long as the input is on the list of hashes above it will exist, but verify here just in case
     if File.exist?(filename)                          # get the run data if there's a corresponding run
       run_body, run_data = load_file(filename)
-      original_run_data = run_data.dup
+      original_run_data = Marshal.load(Marshal.dump(run_data))      # deep copy
 
       gallery = (run_data['gallery'] ||= [ ])         # get or create the gallery (it is just an array of objects)
 

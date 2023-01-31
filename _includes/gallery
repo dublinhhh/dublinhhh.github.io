@@ -18,16 +18,16 @@
 
 <figure class="{{ gallery_layout }} {{ include.class }}">
   {% for img in gallery %}
-    {% if img.url %}
-      <a href="{{ img.url | relative_url }}" {% if img.title %}title="{{ img.title }}" {% endif %}>
-        <img src="{{ img.url | relative_url }}"
-             {% if img.alt %}alt="{{ img.alt }}" {% endif %}>
-      </a>
-    {% else %}
-      <img src="{{ img.image_path | relative_url }}"
-           {% if img.title %}title="{{ img.title }}"{% endif %}
-           {% if img.alt %}alt="{{ img.alt }}" {% endif %}>
-    {% endif %}
+    {% capture url -%}
+      {% if img.url %}
+        {{ img.url }}
+      {% else %}
+        {{ img.image_path | relative_url }}
+      {% endif %}
+    {%- endcapture %}
+    <a href="{{ url }}" {% if img.title %}title="{{ img.title }}" {% endif %}>
+      <img src="{{ url }}"{% if img.alt %}alt="{{ img.alt }}" {% endif %}>
+    </a>
   {% endfor %}
   {% if include.caption %}
     <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>

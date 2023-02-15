@@ -25,7 +25,7 @@ url                      : "https://www.dublinhhh.com"
 baseurl                  : "/website" # the subpath of your site, e.g. "/blog"
 repository               : dublinhhh/website
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "assets/images/guinness.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "assets/images/leprechaun.gif"   # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

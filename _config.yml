@@ -79,6 +79,9 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
+head_scripts:
+ - /assets/custom-js/old-farts.js
+
 # Social Sharing
 twitter:
   username               :

@@ -58,7 +58,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', hint: 'Will be displayed as the photo caption; needs to be different for each photo' }
+      - { label: 'Title', name: 'title', widget: 'string', hint: 'Will be displayed as the photo caption; needs to be different for each photo on a given day' }
       - { label: 'Date', name: 'date', widget: 'datetime', default: '', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, required: false,
                  hint: 'If you supply a date, the photo will also show up on the run page' }
       - { label: 'Hash', name: hash, widget: 'select', options: [ 'Dublin H3', 'I ♥ Monday' ], required: false,

@@ -4,17 +4,21 @@ main:
   - title: Contact
     url: /contact
 links:
-  - title: Other Hashes
-    url: /hashlinks
-  - title: Photos
-    url: /photos
-  - title: Tourist Info
-    url: /tourism
+  - title: Hareline
+    url: /hareline
   - title: Run Archive
     url: /archive
-  - title: Original Site
-    url: https://www.angelfire.com/ak/DublinHHH
+  - title: Photos
+    url: /photos
+  - title: Contact
+    url: /contact
   - title: Hash History
     url: /history
+  - title: Other Hashes
+    url: /hashlinks
+  - title: Tourist Info
+    url: /tourism
+  - title: Original Site
+    url: https://www.angelfire.com/ak/DublinHHH
   - title: About This Site
     url: /site

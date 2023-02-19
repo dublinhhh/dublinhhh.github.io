@@ -2,6 +2,7 @@
 permalink: /contact
 title: Contacts for Dublin Hash
 layout: contact
+last_modified_at: '2022-12-31'
 ---
 
 <h2>Mailing Address</h2>

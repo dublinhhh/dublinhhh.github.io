@@ -1,10 +1,9 @@
 ---
-permalink: /contact
+permalink: "/contact"
 title: Contacts for Dublin Hash
 layout: contact
-last_modified_at: '2022-12-31'
+last_modified_at: '2023-02-19'
 ---
-
 <h2>Mailing Address</h2>
 <p>
 DUBLIN HASH HOUSE HARRIERS<br>

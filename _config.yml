@@ -12,6 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
+# default skin for the theme, but we override fonts and colors in assets/css/main.scss
 minimal_mistakes_skin    : "mint" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -22,8 +23,8 @@ subtitle                 : "A drinking club with a running problem"     # site t
 name                     : "Dublin Hash House Harriers"
 description              : "A drinking club with a running problem"
 url                      : "https://www.dublinhhh.com"
-baseurl                  : "/website" # the subpath of your site, e.g. "/blog"
-repository               : dublinhhh/website
+baseurl                  : ""                                           # the subpath of your site, e.g. "/blog"
+repository               : "dublinhhh/dublinhhh.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/leprechaun.gif"   # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title

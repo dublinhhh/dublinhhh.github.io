@@ -25,7 +25,7 @@ You must have administrator privileges to be able to edit any content on the sit
 
 ## How to log in
 
-You can access the admin interfaces at [Admin Interface](https://dublinhhh.github.io/website/admin).  You can always find this link on the [About this site](https://dublinhhh.github.io/website/site) page on the website.
+You can access the admin interfaces at [Admin Interface](https://dublinhhh.github.io/admin).  You can always find this link on the [About this site](https://dublinhhh.github.io/site) page on the website.
 
 Follow that link and you will be prompted to log in with your Github account.
 

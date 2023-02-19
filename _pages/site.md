@@ -21,4 +21,4 @@ You too can help.  If you would like to help maintain this site (e.g. update the
 
 Please feel free to steal, copy, use, plagiarize any or all of this site.
 
-We use [Github Pages](https://pages.github.com/) to host the site. The complete source code lives at [github.com/dublinhhh/website](https://github.com/dublinhhh/website).  The [README](https://github.com/dublinhhh/website#readme) file has lots of technical info to help anyone who inherits or copies this site.
+We use [Github Pages](https://pages.github.com/) to host the site. The complete source code lives at [github.com/dublinhhh/dublinhhh.github.io](https://github.com/dublinhhh/dublinhhh.github.io).  The [README](https://github.com/dublinhhh/dublinhhh.github.io#readme) file has lots of technical info to help anyone who inherits or copies this site.

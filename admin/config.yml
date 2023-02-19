@@ -1,9 +1,9 @@
 
-site_url: "https://dublinhhh.github.io/website"
+site_url: "https://dublinhhh.github.io/"
 
 backend:
   name: github
-  repo: dublinhhh/website
+  repo: dublinhhh/dublinhhh.github.io
   branch: main
   api_root: https://api.github.com
   site_domain: reliable-kheer-a1fc9b.netlify.com  # use cms.netlify.com for local development

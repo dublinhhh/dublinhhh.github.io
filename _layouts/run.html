@@ -4,27 +4,36 @@ classes: wide
 ---
 
 <div>
-    <table>
-      <tr><th>Date</th><td>{{ page.date | date: '%A' }} {{ page.date | date: '%e %B %Y' }}</td></tr>
-      <tr><th>Time</th><td>{{ page.time }}</td></tr>
-      <tr><th>Hash</th><td>{{ page.hash | append: other_hash }} {% if page.number %} #{{- page.number }} {% endif %}
-                           {% if page.name %} <p>{{ page.name }} {% endif %}</td></tr>
-      <tr><th>Location</th><td>{% if page.map_url %}<a href="{{ page.map_url }}">{% endif %}{{ page.location }}{% if page.map_url %}</a>{% endif %}</td></tr>
-      {% if page.w3w %}
-      <tr><th>W3W</th>
-          <td>
-                {% capture w3w_url -%}https://w3w.co/{{ page.w3w }}{%- endcapture %}
-                <a href="https://w3w.co/{{ page.w3w }}">{{ page.w3w }}</a>
-          </td>
-      </tr>
-      {% endif %}
-      <tr><th>Hares</th><td>{{ page.hares }}</td></tr>
-      {% if page.content.size > 1 %}
-      <tr><th>Comments</th><td>{{ page.content }}<td></tr>
-      {% endif %}
-    </table>
+  <div class="two-column">
+    <div class="first">
+      <table>
+        <tr><th>Date</th><td>{{ page.date | date: '%A' }} {{ page.date | date: '%e %B %Y' }}</td></tr>
+        <tr><th>Time</th><td>{{ page.time }}</td></tr>
+        <tr><th>Hash</th><td>{{ page.hash | append: other_hash }} {% if page.number %} #{{- page.number }} {% endif %}
+                            {% if page.name %} <p>{{ page.name }} {% endif %}</td></tr>
+        <tr><th>Location</th><td>{% if page.map_url %}<a href="{{ page.map_url }}">{% endif %}{{ page.location }}{% if page.map_url %}</a>{% endif %}</td></tr>
+        {% if page.w3w %}
+        <tr><th>W3W</th>
+            <td>
+                  {% capture w3w_url -%}https://w3w.co/{{ page.w3w }}{%- endcapture %}
+                  <a href="https://w3w.co/{{ page.w3w }}">{{ page.w3w }}</a>
+            </td>
+        </tr>
+        {% endif %}
+        <tr><th>Hares</th><td>{{ page.hares }}</td></tr>
+        {% if page.content.size > 1 %}
+        <tr><th>Comments</th><td>{{ page.content }}<td></tr>
+        {% endif %}
+      </table>
+    </div>
+    {% if page.embedded_map %}
+      <div class="second">
+        {{ page.embedded_map }}
+      </div>
+    {% endif %}
+  </div>
 
-    {% if page.gallery %}
-      {% include gallery %}
+  {% if page.gallery %}
+    {% include gallery %}
     {% endif %}
 </div>

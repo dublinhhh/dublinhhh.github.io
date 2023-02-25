@@ -30,3 +30,19 @@ $footer-background-color: #046307;
 nav#site-nav.greedy-nav {
     background: transparent;
 }
+
+// two-column for runs with embedded maps
+.two-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.two-column .first {
+    flex: 1;
+}
+
+.two-column .second {
+    flex: 1;
+    margin-left: 1em;
+}

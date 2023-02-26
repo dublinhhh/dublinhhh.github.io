@@ -1,5 +1,5 @@
 
-site_url: "https://dublinhhh.github.io/"
+site_url: "https://www.dublinhhh.com/"
 
 backend:
   name: github
@@ -41,7 +41,10 @@ collections:
       - { label: 'Other Hash', name: other_hash, widget: 'string', required: false }
       - { label: 'Number', name: number, widget: 'string', required: false }
       - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'E.g.: Annual Shed Hash' }
-      - { label: 'Map URL', name: 'map_url', widget: 'string', required: false }
+      - { label: 'Map URL', name: 'map_url', widget: 'string', required: false,
+                 hint: 'Copy the link from the "Send a Link" panel on "Share" from a mapping site (google, openstreetmap, etc)' }
+      - { label: 'Embedded Map', name: 'embedded_map', widget: 'string', required: false,
+                 hint: 'Copy the HTML from the "Embed a Map" panel on "Share" from a mapping site (google, openstreetmap, etc)' }
       - { label: 'W3W', name: 'w3w', widget: 'string', required: false }
       - { label: 'Comments', name: 'body', widget: 'markdown', hint: 'Anything you want to add...', required: false }
 

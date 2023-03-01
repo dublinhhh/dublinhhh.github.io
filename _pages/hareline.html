@@ -27,7 +27,9 @@ regenerated each daily (shortly after midnight), so this picks up all future run
         <td>{{ run.date | date: '%A' }}</td>
         <td>{{ run.date | date: '%e %B %Y' }}</td>
         <td>{{ run.time }}</td>
-        <td><a href="{{ run.url | relative_url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}
+        <td><a href="{{ run.url | relative_url }}">
+            {% if run.other_hash %} {{ run.other_hash }} {% else %} {{ run.hash }} {% endif %}
+            {% if run.number %} #{{- run.number }} {% endif %}
             {% if run.name %}<br>{{ run.name }} {% endif %}</a></td>
         <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
         <td>{{ run.hares }}</td>

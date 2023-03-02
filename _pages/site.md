@@ -5,7 +5,7 @@ title: About This Site
 classes: wide
 last_modified_at: '2023-02-19'
 ---
-Current version assembled by [Quicktool](mailto:quicktool@carltons.us), based on the [original site](https://www.angelfire.com/ak/DublinHHH) created and maintained for decades by [Polly](richard.hadfield@nsai.ie).
+Current version assembled by [Quicktool](mailto:quicktool@carltons.us), based on the [original site](https://www.angelfire.com/ak/DublinHHH) created and maintained for decades by [Polly](mailto:richard.hadfield@nsai.ie).
 
 Content supplied by all the half-minds who show up.
 
@@ -13,7 +13,7 @@ Site last generated {{ site.time | date:"%Y-%m-%d %H:%M" }}
 
 ## Admin
 
-You too can help.  If you would like to help maintain this site (e.g. update the hareline, add a hash trash, add photos etc), please contact any of the current maintainers to get an invitation.  Start by creating a free account at [Github](https://github.com/) and then send your username or email to one of the current maintainers.
+You too can help.  If you would like to help maintain this site (e.g. update the hareline, add a hash trash, add photos etc), please contact any of the current maintainers to get an invitation.  Start by creating a free account at [Github](https://github.com/) and then send your username or email to one of the current maintainers.  Then use this handy link to log into the admin interface:
 
 [Admin Interface]({{ 'admin' | relative_url }})
 

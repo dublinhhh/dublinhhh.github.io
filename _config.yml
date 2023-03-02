@@ -21,7 +21,7 @@ title                    : "Dublin HHH"
 title_separator          : "-"
 subtitle                 : "A drinking club with a running problem"     # site tagline that appears below site title in masthead
 name                     : "Dublin Hash House Harriers"
-description              : "A drinking club with a running problem"
+description              : "A drinking club with a running problem -- beer drinking and running in Dublin, Ireland with the Hash House Harriers (HHH)"
 url                      : "https://www.dublinhhh.com"
 baseurl                  : ""                                           # the subpath of your site, e.g. "/blog"
 repository               : "dublinhhh/dublinhhh.github.io"

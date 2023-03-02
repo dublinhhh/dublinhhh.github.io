@@ -13,5 +13,5 @@ last_modified_at: 2023-01-04
 * [Ryan Air - Cheap Fares](http://www.ryanair.ie)
 * [Aer Lingus - Cheap Fares](http://www.aerlingus.com)
 * [AirCoach Services](http://www.aircoach.ie)
-* [http://www.ireland.com](Ireland Guide)
-* [http://www.publin.ie](A pub guide)
+* [Ireland Guide](http://www.ireland.com)
+* [A Pub Guide](http://www.publin.ie)

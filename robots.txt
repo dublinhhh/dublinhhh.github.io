@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /admin
+
+User-agent: *
 Allow: /
 
 Sitemap: https://dublinhhh.com/sitemap.xml

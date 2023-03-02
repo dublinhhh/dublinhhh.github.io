@@ -3,7 +3,7 @@ permalink: "/site"
 layout: single
 title: About This Site
 classes: wide
-last_modified_at: '2023-02-19'
+last_modified_at: '2023-03-02'
 ---
 Current version assembled by [Quicktool](mailto:quicktool@carltons.us), based on the [original site](https://www.angelfire.com/ak/DublinHHH) created and maintained for decades by [Polly](mailto:richard.hadfield@nsai.ie).
 

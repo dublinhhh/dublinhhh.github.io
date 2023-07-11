@@ -23,8 +23,10 @@ last_modified_at: 1999-01-01
     <div class="entries-{{ entries_layout }}">
       <table>
       {% for run in year.items reversed %}
+        {% capture dow %}{{ run.date | date: '%A' }}{% endcapture %}
+        {% if run.dow and run.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
         <tr>
-          <td>{{ run.date | date: '%A' }}</td>
+          <td>{{ dow }}</td>
           <td>{{ run.date | date: '%e %B %Y' }}</td>
           <td>{{ run.time }}</td>
           <td><a href="{{ run.url | relative_url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}

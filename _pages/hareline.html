@@ -24,7 +24,9 @@ regenerated each daily (shortly after midnight), so this picks up all future run
     </tr>
     {% for run in runs %}
       <tr>
-        <td>{{ run.date | date: '%A' }}</td>
+        {% capture dow %}{{ run.date | date: '%A' }}{% endcapture %}
+        {% if run.dow and run.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
+        <td>{{ dow }}</td>
         <td>{{ run.date | date: '%e %B %Y' }}</td>
         <td>{{ run.time }}</td>
         <td><a href="{{ run.url | relative_url }}">

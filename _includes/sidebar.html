@@ -14,7 +14,9 @@
         {% assign site_date = site.time | date: '%Y%m%d' | plus: 0 %}
         {% assign runs = site.hareline | where_exp: "item", "site_date <= item.ordinal_date" %}
         {% assign run = runs[0] %}
-        <p><a href={{ run.url | relative_url }}>{{ run.date | date: "%e %b" }} {{ run.time }}<br>{{ run.hares }}<br>{{ run.location }}</a>
+        {% capture dow %}{{ run.date | date: '%A' }}{% endcapture %}
+        {% if run.dow and run.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
+        <p><a href={{ run.url | relative_url }}>{{ dow }}<br>{{ run.date | date: "%e %b" }} {{ run.time }}<br>{{ run.hares }}<br>{{ run.location }}</a>
       {% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}

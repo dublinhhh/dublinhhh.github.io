@@ -54,11 +54,13 @@ begin
   body, data = load_file(filename)
   original_data = data.dup
 
+  # set dow (day of week) if a date
   # set ordinal date if a date (used for sorting by date in jekyll where_exp)
   # jekyll site.time is a date object complete with time; you cannot create a date-only oject
   # converting it to a string with 'date: %Y-%m-%d' makes a string that cannot be used to sort
   if data.key?('date')
     data['ordinal_date'] = data['date'].strftime('%Y%m%d').to_i
+    data['dow'] = data['date'].strftime('%u').to_i
   end
 
   if update_last_modified

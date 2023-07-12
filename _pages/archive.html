@@ -29,7 +29,7 @@ last_modified_at: 1999-01-01
           <td>{{ dow }}</td>
           <td>{{ run.date | date: '%e %B %Y' }}</td>
           <td>{{ run.time }}</td>
-          <td><a href="{{ run.url | relative_url }}">{{ run.hash | append: other_hash }} {% if run.number %} #{{- run.number }} {% endif %}
+          <td><a href="{{ run.url | relative_url }}">{{ run.other_hash | default: run.hash }} {% if run.number %} #{{- run.number }} {% endif %}
               {% if run.name %}<br>{{ run.name }} {% endif %}</a></td>
           <td>{% if run.map_url %}<a href="{{ run.map_url }}">{% endif %}{{ run.location }}{% if run.map_url %}</a>{% endif %}</td>
           <td>{{ run.hares }}</td>

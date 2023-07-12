@@ -11,7 +11,7 @@ classes: wide
       <table>
         <tr><th>Date</th><td>{{ dow }} {{ page.date | date: '%e %B %Y' }}</td></tr>
         <tr><th>Time</th><td>{{ page.time }}</td></tr>
-        <tr><th>Hash</th><td>{% if page.other_hash %} {{ page.other_hash }} {% else %} {{ page.hash }} {% endif %}
+        <tr><th>Hash</th><td>{{ page.other_hash | default: page.hash }}
                              {% if page.number %} #{{- page.number }} {% endif %}
                              {% if page.name %} <p>{{ page.name }} {% endif %}</td></tr>
         <tr><th>Location</th><td>{% if page.map_url %}<a href="{{ page.map_url }}">{% endif %}{{ page.location }}{% if page.map_url %}</a>{% endif %}</td></tr>

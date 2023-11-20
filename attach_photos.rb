@@ -29,7 +29,7 @@ end
 def add_photo(filename, date, caption=nil)
   digest = Digest::MD5.hexdigest(File.read(filename))
 
-  destination = sanitize_filename("#{date}-#{ caption&.empty? ? digest : caption }")
+  destination = sanitize_filename("#{date}-#{ caption&.empty? ? digest : caption }#{File.extname(filename)}")
   asset_path = add_photo_to_assets(filename, destination)
 
   photo_data = {

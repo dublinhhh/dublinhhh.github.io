@@ -20,7 +20,7 @@ def sanitize_filename(name)
 end
 
 def add_photo_to_assets(filename, destination)
-  path = "/assets/images/#{destination}"
+  path = "assets/images/#{destination}"
   FileUtils.copy(filename, path)
 
   path
@@ -34,7 +34,7 @@ def add_photo(filename, date, caption=nil)
 
   photo_data = {
     'title' => caption,
-    'image_path' => asset_path,
+    'image_path' => '/' + asset_path,
     'date' => date,
     'ordinal_date' => Integer(date.to_s.gsub('-', '')),
     'last_modified_at' => Time.now.strftime('%Y-%m-%d'),
@@ -63,14 +63,6 @@ def get_date(filename)
     response.chomp!
     date = response unless response.empty?
   end
-
-  #loop do
-  #  print "Date (YYYY-MM-DD) [#{date}]: "
-  #  response = STDIN.gets
-  #  response.chomp!
-  #  date = response unless response.empty?
-  #  break if date =~ /\d{4}-\d{2}-\d{2}/
-  #end
 
   date
 end

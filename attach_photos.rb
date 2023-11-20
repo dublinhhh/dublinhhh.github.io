@@ -20,7 +20,7 @@ def sanitize_filename(name)
 end
 
 def add_photo_to_assets(filename, destination)
-  path = "assets/images/#{destination}"
+  path = "/assets/images/#{destination}"
   FileUtils.copy(filename, path)
 
   path

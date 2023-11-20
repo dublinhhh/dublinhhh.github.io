@@ -29,8 +29,8 @@ end
 def add_photo(filename, date, caption=nil)
   digest = Digest::MD5.hexdigest(File.read(filename))
 
-  destination = sanitize_filename("#{date}-#{ caption&.empty? ? digest : caption }#{File.extname(filename)}")
-  asset_path = add_photo_to_assets(filename, destination)
+  destination = sanitize_filename("#{date}-#{ caption&.empty? ? digest : caption }")
+  asset_path = add_photo_to_assets(filename, destination + File.extname(filename))
 
   photo_data = {
     'title' => caption,
@@ -39,7 +39,7 @@ def add_photo(filename, date, caption=nil)
     'ordinal_date' => Integer(date.to_s.gsub('-', '')),
     'last_modified_at' => Time.now.strftime('%Y-%m-%d'),
   }
-  photo_path = "_photos/#{destination}"
+  photo_path = "_photos/#{destination}.md"
   save_file(photo_path, photo_data)
 
   return photo_path, asset_path

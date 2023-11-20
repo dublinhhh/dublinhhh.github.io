@@ -25,7 +25,7 @@
         {{ img.image_path | relative_url }}
       {% endif %}
     {%- endcapture %}
-    <a href="{{ url }}" {% if img.title %}title="{{ img.title }}" {% endif %}>
+    <a href="{{ url }}" class="image-popup" {% if img.title %}title="{{ img.title }}" {% endif %}>
       <img src="{{ url }}"{% if img.alt %}alt="{{ img.alt }}" {% endif %}>
     </a>
   {% endfor %}

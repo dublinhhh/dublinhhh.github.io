@@ -24,9 +24,12 @@ last_modified_at: 2023-01-01
       <figure class="{{ gallery_layout }}">
       {% for photo in year.items reversed %}
         {% if photo.image_path %}
-          <img src="{{ photo.image_path | relative_url }}"
-               {% if img.title %}title="{{ photo.title }}"{% endif %}
-               {% if img.alt %}alt="{{ photo.alt }}" {% endif %}>
+          <a href="{{ photo.image_path | relative_url }}"
+             {% if photo.title %}title="{{ photo.title }}"{% endif %}>
+            <img src="{{ photo.image_path | relative_url }}"
+                 {% if photo.title %}title="{{ photo.title }}"{% endif %}
+                 {% if photo.alt %}alt="{{ photo.alt }}" {% endif %}>
+          </a>
         {% endif %}
       {% endfor %}
       </figure>

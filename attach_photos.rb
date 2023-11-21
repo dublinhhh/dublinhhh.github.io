@@ -53,7 +53,7 @@ def get_date(filename)
     date = timestampe.strftime('%F')
   else
     # see if you can find it in the filename (whatsapp downloads)
-    match = filename.match(/ (\d{4}-\d{2}-\d{2}) /)
+    match = filename.match(/(\d{4}-\d{2}-\d{2})/)
     date = match[1] if match
   end
 

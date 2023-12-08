@@ -63,7 +63,7 @@ begin
     data['dow'] = data['date'].strftime('%u').to_i
   end
 
-  if update_last_modified
+  if !data.key?('last_modified_at')
     data['last_modified_at'] = Time.now.strftime('%Y-%m-%d')
   end
 

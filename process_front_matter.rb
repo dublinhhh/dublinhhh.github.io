@@ -7,31 +7,8 @@
 #   it is added to the photo gallery for the corresponding run
 
 require 'jekyll'
-require 'safe_yaml'
 
-# taken from jekyll
-YAML_FRONT_MATTER_REGEXP = %r!\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)!m.freeze
-
-# read contents of filename, returns body and YAML frontmatter if present
-def load_file(filename)
-  data = { }
-  body = File.read(filename)
-  if body =~ YAML_FRONT_MATTER_REGEXP
-    data = SafeYAML.load(Regexp.last_match(1))
-    body = Regexp.last_match.post_match
-  end
-
-  return body, data
-end
-
-# write YAML frontmatter and contents to filename
-def save_file(filename, data, body)
-  File.open(filename, 'w') do |file|
-    file.puts(YAML.dump(data))
-    file.puts('---')
-    file.puts(body)
-  end
-end
+require_relative './front_matter.rb'
 
 # beware: this is fragile, it must match the config in admin/config.yml
 def run_pathname(date, hash)
@@ -107,11 +84,11 @@ begin
       gallery[index]['image_path'] = data['image_path']
       gallery[index]['title'] = data['title']
 
-      if update_last_modified
-        run_data['last_modified_at'] = Time.now.strftime('%Y-%m-%d')
-      end
-
       if run_data != original_run_data                  # avoid unnecessary file writes
+        if update_last_modified
+          run_data['last_modified_at'] = Time.now.strftime('%Y-%m-%d')
+        end
+
         save_file(filename, run_data, run_body)
       end
     end

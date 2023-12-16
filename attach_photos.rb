@@ -37,6 +37,7 @@ def add_photo(filename, date, caption=nil)
     'image_path' => '/' + asset_path,
     'date' => date,
     'ordinal_date' => Integer(date.to_s.gsub('-', '')),
+    'dow' => date.strftime('%u').to_i,
     'last_modified_at' => Time.now.strftime('%Y-%m-%d'),
   }
   photo_path = "_photos/#{destination}.md"

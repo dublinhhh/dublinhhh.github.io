@@ -115,7 +115,7 @@ def process(filename)
   end
 
   gallery[index]['url'] = nil
-  gallery[index]['image_path'] = %Q("#{image_path}")
+  gallery[index]['image_path'] = '/' + image_path
   gallery[index]['title'] = caption
 
   run_data['last_modified_at'] = Time.now.strftime('%Y-%m-%d')

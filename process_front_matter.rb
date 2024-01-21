@@ -44,6 +44,8 @@ begin
     data['last_modified_at'] = Time.now.strftime('%Y-%m-%d')
   end
 
+  add_location(data)
+
   if data != original_data                            # avoid unnecessary file writes
     save_file(filename, data, body)
   end

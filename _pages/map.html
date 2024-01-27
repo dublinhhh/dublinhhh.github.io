@@ -1,0 +1,58 @@
+---
+layout: single
+classes: wide
+permalink: /map
+title: Hareline Map
+---
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style>.inline { display: inline-block; }</style>
+
+{% assign runsInYear = site.hareline | group_by_exp: 'run', 'run.date | date: "%Y"' %}
+<ul class="taxonomy__index">
+{% for year in runsInYear reversed %}
+    <li><input type="checkbox" id='{{ year.name }}' checked=true> <label class="inline" for='{{ year.name }}'>{{ year.name }}</label></li>
+{% endfor %}
+</ul>
+
+<div id="map" style="height:80vh" ></div>
+
+<script>
+var latitude = 53.35 // Dublin
+var longitude = -6.26027778
+var map = L.map("map").setView([latitude, longitude], 13);
+var msg;
+var markers = {}
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            { maxZoom: 19, attribution: "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>" }).addTo(map);
+</script>
+
+{% for year in runsInYear reversed %}
+<script>
+markers['{{ year.name }}'] = [ ]
+{% for item in year.items %}
+    {% if item.latitude and item.longitude %}
+    msg = '{{ item.location | escape }}<br><a href="{{ item.url | relative_url }}">' +
+          '{{ item.other_hash | default: item.hash }} {% if item.number %}#{{- item.number -}}{% endif %}</a>' +
+          '&nbsp;{{ item.date | date: "%e/%m/%y" }}<br>{{ item.hares | escape }}';
+    markers['{{ year.name }}'].push(L.marker(['{{ item.latitude }}', '{{ item.longitude }}']).addTo(map).bindPopup(msg))
+    {% else %}
+        {% unless item.cancelled %} console.log('Missing location info for {{ item.url | relative_url }}') {% endunless %}
+    {% endif %}
+{% endfor %}
+</script>
+{% endfor %}
+
+<script>
+    document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                markers[this.id].forEach(function(marker) {map.addLayer(marker)})
+            } else {
+                markers[this.id].forEach(function(marker) {map.removeLayer(marker)})
+            }
+        });
+    });
+</script>

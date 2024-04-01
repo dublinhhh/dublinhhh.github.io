@@ -7,6 +7,7 @@ begin
   require 'exifr/jpeg'
 rescue LoadError => e
   STDERR.puts("Please install gems first: #{e.message}")
+  STDERR.puts("E.g. gem install exifr safe_yaml")
   exit(1)
 end
 
@@ -79,7 +80,13 @@ def process(filename)
   date = get_date(filename)
 
   # look for most recent run
-  day = Time.new(date)
+  begin
+  day = Time.new(*date.split('-'))
+  rescue => e
+    $stderr.puts("Unable to parse the date '#{date}': #{e}")
+    exit(1)
+  end
+
   run = nil
   (0..5).each do |i|
     # does not handle 2 hashes on same day

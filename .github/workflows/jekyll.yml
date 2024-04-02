@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2           # Need depth 2 to enable 'git log -n 1' below
-      - name: Setup Ruby
+      - name: 'Setup Ruby'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'       # Not needed with a .ruby-version file

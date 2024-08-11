@@ -29,7 +29,10 @@ classes: wide
         </tr>
         {% endif %}
         <tr><th>Hares</th><td>{{ page.hares }}</td></tr>
-        <tr><th>Forecast</th><td><span id=temp></span><img id=wmo src=''></td></tr>
+        <tr id=forecast style="display:none">
+          <th>Forecast</th>
+          <td><span id=temp></span>&nbsp;<img style="height:1.5em" id=wmo src=''></td>
+        </tr>
         {% if page.content.size > 1 %}
         <tr><th>Comments</th><td>{{ page.content }}<td></tr>
         {% endif %}

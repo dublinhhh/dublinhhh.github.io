@@ -3,6 +3,11 @@ layout: single
 classes: wide
 ---
 
+<script src="/assets/custom-js/weather.js"></script>
+<script>
+  window.onload = function() { show_forecast("{{ page.latitude }}", "{{ page.longitude }}",
+                               "{{ page.date | date: '%F' }}", "{{page.time}}") }
+</script>
 {% capture dow %}{{ page.date | date: '%A' }}{% endcapture %}
 {% if page.dow and page.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
 <div>
@@ -24,6 +29,7 @@ classes: wide
         </tr>
         {% endif %}
         <tr><th>Hares</th><td>{{ page.hares }}</td></tr>
+        <tr><th>Forecast</th><td><span id=temp></span><img id=wmo src=''></td></tr>
         {% if page.content.size > 1 %}
         <tr><th>Comments</th><td>{{ page.content }}<td></tr>
         {% endif %}

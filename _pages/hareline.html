@@ -28,7 +28,7 @@ regenerated each daily (shortly after midnight), so this picks up all future run
         {% capture dow %}{{ run.date | date: '%A' }}{% endcapture %}
         {% if run.dow and run.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
         <td>{{ dow }}</td>
-        <td>{{ run.date | date: '%e %B %Y' }}{% if page.end_date %}&nbsp;<br>{{ page.end_date | date: '%e %B %Y' }}{% endif %}</td>
+        <td>{{ run.date | date: '%e %B %Y' }}{% if page.end_date != empty %}&nbsp;&ndash;<br>{{ page.end_date | date: '%e %B %Y' }}{% endif %}</td>
         <td>{{ run.time }}</td>
         <td><a href="{{ run.url | relative_url }}">
             {{ run.other_hash | default: run.hash }}

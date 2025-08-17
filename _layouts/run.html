@@ -14,8 +14,10 @@ classes: wide
   <div class="two-column">
     <div class="first">
       <table>
-        <tr><th>Date</th><td>{{ dow }} {{ page.date | date: '%e %B %Y' }}</td></tr>
-        <tr><th>Time</th><td>{{ page.time }}</td></tr>
+        <tr><th>Date</th><td>{{ dow }} {{ page.date | date: '%e %B %Y' }} {% if page.end_date %} {{ page.end_date | date: '%e %B %Y' }} {% endif %}</td></tr>
+        {% if page.time %}
+          <tr><th>Time</th><td>{{ page.time }} </td></tr>
+        {% endif %}
         <tr><th>Hash</th><td>{{ page.other_hash | default: page.hash }}
                              {% if page.number %} #{{- page.number }} {% endif %}
                              {% if page.name %} <p>{{ page.name }} {% endif %}</td></tr>

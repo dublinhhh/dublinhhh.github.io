@@ -20,7 +20,7 @@ classes: wide
         {% endif %}
         <tr><th>Hash</th><td>{{ page.other_hash | default: page.hash }}
                              {% if page.number %} #{{- page.number }} {% endif %}
-                             {% if page.name %} <p>{{ page.name }} {% endif %}</td></tr>
+                             {% if page.name %} <p style="margin-bottom: 0;"> {{ page.name }} {% endif %}</td></tr>
         <tr><th>Location</th><td>{% if page.map_url %}<a href="{{ page.map_url }}">{% endif %}{{ page.location }}{% if page.map_url %}</a>{% endif %}</td></tr>
         {% if page.w3w %}
         <tr><th>W3W</th>

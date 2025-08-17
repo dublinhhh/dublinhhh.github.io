@@ -25,15 +25,10 @@ regenerated each daily (shortly after midnight), so this picks up all future run
     </tr>
     {% for run in runs %}
       <tr>
-        <td>
-          {% comment %} The day of week (e.g. 'Monday') should be highlighted (shown in red) if it is other than Monday or if there is a range of dates {% endcomment %}
-          {% if run.end_date != empty || run.dow and run.dow != 1 %} {% assign highlight = true %} {% endif %}
-          {% if highlight %}<span style='color:red'>{% endif %}
-          {{ run.date | date: '%A' }}
-          {% if run.end_date != empty %}%nbsp;%ndash; {{ run.end_date | date: '%A' }}{% endif %}
-          {% if highlight %}</span>{% endif %}
-        </td>
-        <td>{% if run.end_date_display != empty %} {{ run.date_display }} {% else %} {{ run.date | date: '%e %B %Y' }} {% endif %}</td>
+        {% capture dow %}{{ run.date | date: '%A' }}{% endcapture %}
+        {% if run.dow and run.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
+        <td>{{ dow }}</td>
+        <td>{{ run.date | date: '%e %B %Y' }}{% if run.end_date != empty %}&nbsp;&ndash;<br>{{ run.end_date | date: '%e %B %Y' }}{% endif %}</td>
         <td>{{ run.time }}</td>
         <td><a href="{{ run.url | relative_url }}">
             {{ run.other_hash | default: run.hash }}

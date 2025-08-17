@@ -24,11 +24,16 @@ last_modified_at: 1999-01-01
     <div class="entries-{{ entries_layout }}">
       <table>
       {% for run in year.items reversed %}
-        {% capture dow %}{{ run.date | date: '%A' }}{% endcapture %}
-        {% if run.dow and run.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
+        {% comment %} The day of week (e.g. 'Monday') should be highlighted (shown in red) if it is other than Monday or if there is a range of dates {% endcomment %}
+        {% if run.dow and run.dow != 1 or run.end_date != empty %} {% assign highlight = true %} {% else %} {% assign highlight = false %} {% endif %}
+        {% capture dow %}
+          {% if highlight %}<span style='color:red'>{% endif %}
+          {{ run.date | date: '%A' -}}{% if run.end_date != '' %}&ndash;{{- run.end_date | date: '%A' }}{% endif %}
+          {% if highlight %}</span>{% endif %}
+        {% endcapture %}
         <tr>
           <td>{{ dow }}</td>
-          <td>{{ run.date | date: '%e %B %Y' }}</td>
+          <td>{% if run.date_display %}{{ run.date_display }}{% else %}{{ run.date | date: '%e %B %Y' }}{% endif %}</td>
           <td>{{ run.time }}</td>
           <td><a href="{{ run.url | relative_url }}">{{ run.other_hash | default: run.hash }} {% if run.number %} #{{- run.number }} {% endif %}
               {% if run.name %}<br>{{ run.name }} {% endif %}</a></td>

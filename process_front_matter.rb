@@ -36,8 +36,22 @@ begin
   # jekyll site.time is a date object complete with time; you cannot create a date-only oject
   # converting it to a string with 'date: %Y-%m-%d' makes a string that cannot be used to sort
   if data.key?('date')
-    data['ordinal_date'] = data['date'].strftime('%Y%m%d').to_i
-    data['dow'] = data['date'].strftime('%u').to_i
+    start_date = data['date']
+    data['ordinal_date'] = start_date.strftime('%Y%m%d').to_i
+    data['dow'] = start_date.strftime('%u').to_i
+    data['date_display'] = start_date.strftime('%e %B %Y').strip
+
+    if data.key?('end_date') && data['end_date'].is_a?(Date)
+      end_date = data['end_date']
+      # if there an end date, we'll compress it to '3-5 July 2026' or '30 July-2 August 2026'
+      if start_date.year == end_date.year && start_date.month == end_date.month    # Same month: '3-5 July 2026'
+        data['date_display'] = "#{start_date.strftime('%e').strip}&ndash;#{end_date.strftime('%e %B %Y').strip}"
+      elsif start_date.year == end_date.year # Same year, different months: '30 July-2 August 2026'
+        data['date_display'] = "#{start_date.strftime('%e %B').strip}&ndash;#{end_date.strftime('%e %B %Y').strip}"
+      else # Different years: '30 July 2025-2 August 2026'
+        data['date_display'] = "#{start_date.strftime('%e %B %Y').strip}&ndash;#{end_date.strftime('%e %B %Y').strip}"
+      end
+    end
   end
 
   if !data.key?('last_modified_at')

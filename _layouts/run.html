@@ -8,13 +8,22 @@ classes: wide
   window.onload = function() { show_forecast("{{ page.latitude }}", "{{ page.longitude }}",
                                "{{ page.date | date: '%F' }}", "{{page.time}}") }
 </script>
-{% capture dow %}{{ page.date | date: '%A' }}{% endcapture %}
-{% if page.dow and page.dow != 1 %}{% capture dow %}<span style='color:red'>{{ dow }}</span>{% endcapture %}{% endif %}
+
+{% comment %} The day of week (e.g. 'Monday') should be highlighted (shown in red) if it is other than Monday or if there is a range of dates {% endcomment %}
+{% if page.dow and page.dow != 1 or page.end_date != empty %} {% assign highlight = true %} {% else %} {% assign highlight = false %} {% endif %}
+{% capture dow %}
+  {% if highlight %}<span style='color:red'>{% endif %}
+  {{ page.date | date: '%A' -}}{% if page.end_date != '' %}&ndash;{{- page.end_date | date: '%A' }}{% endif %}
+  {% if highlight %}</span>{% endif %}
+{% endcapture %}
+
 <div>
   <div class="two-column">
     <div class="first">
       <table>
-        <tr><th>Date</th><td>{{ dow }} {{ page.date | date: '%e %B %Y' }} {% if page.end_date != empty %}&nbsp;&ndash;{{ page.end_date | date: '%e %B %Y' }} {% endif %}</td></tr>
+        <tr><th>Date</th><td>
+          {{ dow }}
+          {% if page.date_display %}{{ page.date_display }}{% else %}{{ page.date | date: '%e %B %Y' }}{% endif %}</td></tr>
         {% if page.time != empty %}
           <tr><th>Time</th><td>{{ page.time }} </td></tr>
         {% endif %}

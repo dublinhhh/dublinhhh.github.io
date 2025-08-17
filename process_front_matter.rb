@@ -39,7 +39,6 @@ begin
     start_date = data['date']
     data['ordinal_date'] = start_date.strftime('%Y%m%d').to_i
     data['dow'] = start_date.strftime('%u').to_i
-    data['date_display'] = start_date.strftime('%e %B %Y').strip
 
     if data.key?('end_date') && data['end_date'].is_a?(Date)
       end_date = data['end_date']

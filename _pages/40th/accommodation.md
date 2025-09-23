@@ -14,7 +14,7 @@ last_modified_at: '2025-09-23'
   <a href="/40th/registration">Registration</a>
 </div>
 
-## Accommodation
+## DH3 40th Birthday Hash - Accommodation
 
 TBD
 

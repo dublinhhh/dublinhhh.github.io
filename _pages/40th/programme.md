@@ -7,7 +7,12 @@ sidebar: false
 last_modified_at: '2025-09-23'
 ---
 
-[Programme](#programme) | [Location](/40th/location) | [Accommodation](/40th/accommodation) | [Registration](/40th/registration)
+<div class="nav-buttons">
+  <a href="#programme" class="active">Programme</a>
+  <a href="/40th/location">Location</a>
+  <a href="/40th/accommodation">Accommodation</a>
+  <a href="/40th/registration">Registration</a>
+</div>
 
 ## DH3 40th Birthday Hash - Programme
 

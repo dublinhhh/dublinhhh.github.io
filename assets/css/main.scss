@@ -47,3 +47,36 @@ nav#site-nav.greedy-nav {
     flex: 1;
     margin-left: 1em;
 }
+
+// 40th Birthday Navigation Buttons
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1em;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-buttons a {
+    padding: 6px 12px;
+    border: 2px solid #046307;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #046307;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 0.7em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-buttons a:hover {
+    background-color: #046307;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-buttons a.active {
+    background-color: #046307;
+    color: white;
+}

@@ -7,7 +7,12 @@ sidebar: false
 last_modified_at: '2025-09-23'
 ---
 
-[Programme](/40th/programme) | [Location](/40th/location) | [Accommodation](#accommodation) | [Registration](/40th/registration)
+<div class="nav-buttons">
+  <a href="/40th/programme">Programme</a>
+  <a href="/40th/location">Location</a>
+  <a href="#accommodation" class="active">Accommodation</a>
+  <a href="/40th/registration">Registration</a>
+</div>
 
 ## Accommodation
 

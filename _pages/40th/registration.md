@@ -7,11 +7,16 @@ sidebar: false
 last_modified_at: '2025-09-23'
 ---
 
-[Programme](/40th/programme) | [Location](/40th/location) | [Accommodation](/40th/accommodation) | [Registration](#registration)
+<div class="nav-buttons">
+  <a href="/40th/programme">Programme</a>
+  <a href="/40th/location">Location</a>
+  <a href="/40th/accommodation">Accommodation</a>
+  <a href="#registration" class="active">Registration</a>
+</div>
 
 ## DH3 40th Birthday Hash - Registration
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVjLBpQPYwrjKBvqyB467bnnPUXg40wUwvr9kgXYwqGm2uzQ/viewform?embedded=true" width="1024" height="3119" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVjLBpQPYwrjKBvqyB467bnnPUXg40wUwvr9kgXYwqGm2uzQ/viewform?embedded=true" width="100%" height="3119" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ---
 

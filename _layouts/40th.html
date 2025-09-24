@@ -1,0 +1,20 @@
+---
+layout: splash
+classes: wide full-width
+sidebar: false
+---
+
+<div class="nav-buttons">
+  <a href="/40th/programme"{% if page.permalink == '/40th/programme' %} class="active"{% endif %}>Programme</a>
+  <a href="/40th/location"{% if page.permalink == '/40th/location' %} class="active"{% endif %}>Location</a>
+  <a href="/40th/accommodation"{% if page.permalink == '/40th/accommodation' %} class="active"{% endif %}>Accommodation</a>
+  <a href="/40th/registration"{% if page.permalink == '/40th/registration' %} class="active"{% endif %}>Registration</a>
+  <a href="/40th/faq"{% if page.permalink == '/40th/faq' %} class="active"{% endif %}>FAQ</a>
+  <a href="/40th/whoscumming"{% if page.permalink == '/40th/whoscumming' %} class="active"{% endif %}>Who's Cumming?</a>
+</div>
+
+<h2>{{ page.title }}</h2>
+
+{{ content }}
+
+{% unless page.permalink == '/40th' %}<a href="/40th">← 40th Birthday Hash</a>{% endunless %}

@@ -1,11 +1,11 @@
 ---
 permalink: "/40th/whoscumming"
-title: DH3 40th Birthday Hash - Who's Cumming?
+title: Irish Nash Hash - Who's Cumming?
 layout: 40th
 last_modified_at: '2025-09-23'
 ---
 
-### Confirmed regos
+### Confirmed Registrations
 
 <div id="loading">Loading registration data...</div>
 <div id="registration-table" style="display:none;"></div>
@@ -14,7 +14,8 @@ last_modified_at: '2025-09-23'
 <script>
 // Replace SHEET_ID with your public Google Sheet ID
 // Get this from your Google Sheets URL: https://docs.google.com/spreadsheets/d/SHEET_ID/edit
-const SHEET_ID = '1K2uz1d2Z6hWvw4AHPAFlZg0Ua1TrB_nDa5N-rl9WWc8';
+const SHEET_ID = 
+'12fO-bjCD2wLRK3NdYq0C8046cM2UQ2yeR1XlsZJt5wo';
 // CSV export gets all data, no range needed
 
 async function loadRegistrations() {

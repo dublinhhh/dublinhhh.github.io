@@ -27,6 +27,20 @@ The Dublin Hash House Harriers merely schedules the activity and publishes detai
 
 We remind you that running, especially in mountains or outdoor areas, carries inherent risks. By taking part, you accept those risks and are responsible for your safety.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJSZQJZ8QzKnBqnIqqZk5DvzF0hVv_HT02-h4U4NbAeUtIDQ/viewform?embedded=true" width="1200" height="3549" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<style>
+.registration-form {
+  width: 100%;
+  max-width: 1200px;
+  height: 3549px;
+}
+
+@media (max-width: 768px) {
+  .registration-form {
+    height: 4000px;
+  }
+}
+</style>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJSZQJZ8QzKnBqnIqqZk5DvzF0hVv_HT02-h4U4NbAeUtIDQ/viewform?embedded=true" class="registration-form" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 <br>

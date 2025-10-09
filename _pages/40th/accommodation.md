@@ -19,5 +19,5 @@ last_modified_at: '2025-09-23'
 
 <div style="display: flex; gap: 10px; margin-top: 20px;">
   <img src="/assets/images/accomodations1.jpg" alt="Accommodations 1" style="width: 50%; height: auto; object-fit: cover;">
-  <img src="/assets/images/accomodations1.jpg" alt="Accommodations 2" style="width: 50%; height: auto; object-fit: cover;">
+  <img src="/assets/images/accomodations2.jpg" alt="Accommodations 2" style="width: 50%; height: auto; object-fit: cover;">
 </div>

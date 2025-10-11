@@ -1,7 +1,7 @@
 ---
-permalink: "/40th/registration"
-title: DH3 40th Birthday Hash - Registration
-layout: 40th
+permalink: "/nashhash/registration"
+title: Irish Nash Hash - Registration
+layout: nashhash
 last_modified_at: '2025-09-23'
 ---
 

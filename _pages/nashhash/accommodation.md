@@ -1,7 +1,7 @@
 ---
-permalink: "/40th/accommodation"
+permalink: "/nashhash/accommodation"
 title: Irish Nash Hash - Accommodation
-layout: 40th
+layout: nashhash
 last_modified_at: '2025-09-23'
 ---
 

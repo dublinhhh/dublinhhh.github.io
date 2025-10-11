@@ -1,0 +1,21 @@
+---
+layout: splash
+classes: wide full-width
+sidebar: false
+---
+
+<div class="dh3-header">
+  <a href="/nashhash" class="dh3-title">Irish Nash Hash - Celebrating 40 years of The Dublin Hash House Harriers</a>
+</div>
+
+<div class="nav-buttons">
+  <a href="/nashhash/programme"{% if page.permalink == '/nashhash/programme' %} class="active"{% endif %}>Programme</a>
+  <a href="/nashhash/accommodation"{% if page.permalink == '/nashhash/accommodation' %} class="active"{% endif %}>Accommodation</a>
+  <a href="/nashhash/registration"{% if page.permalink == '/nashhash/registration' %} class="active"{% endif %}>Registration</a>
+  <a href="/nashhash/faq"{% if page.permalink == '/nashhash/faq' %} class="active"{% endif %}>FAQ</a>
+  <a href="/nashhash/whoscumming"{% if page.permalink == '/nashhash/whoscumming' %} class="active"{% endif %}>Who's Cumming?</a>
+</div>
+
+{{ content }}
+
+{% unless page.permalink == '/nashhash' %}<a href="/nashhash">← Irish Nash Hash</a>{% endunless %}

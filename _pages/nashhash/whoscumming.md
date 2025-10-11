@@ -1,7 +1,7 @@
 ---
-permalink: "/40th/whoscumming"
+permalink: "/nashhash/whoscumming"
 title: Irish Nash Hash - Who's Cumming?
-layout: 40th
+layout: nashhash
 last_modified_at: '2025-09-23'
 ---
 

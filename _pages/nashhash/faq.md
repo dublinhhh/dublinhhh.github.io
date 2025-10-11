@@ -1,7 +1,7 @@
 ---
-permalink: "/40th/faq"
-title: DH3 40th Birthday Hash - FAQ
-layout: 40th
+permalink: "/nashhash/faq"
+title: Irish Nash Hash - FAQ
+layout: nashhash
 last_modified_at: '2025-09-23'
 ---
 

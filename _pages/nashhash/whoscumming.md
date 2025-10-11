@@ -14,8 +14,7 @@ last_modified_at: '2025-09-23'
 <script>
 // Replace SHEET_ID with your public Google Sheet ID
 // Get this from your Google Sheets URL: https://docs.google.com/spreadsheets/d/SHEET_ID/edit
-const SHEET_ID = 
-'12fO-bjCD2wLRK3NdYq0C8046cM2UQ2yeR1XlsZJt5wo';
+const SHEET_ID = '12fO-bjCD2wLRK3NdYq0C8046cM2UQ2yeR1XlsZJt5wo';
 // CSV export gets all data, no range needed
 
 async function loadRegistrations() {
@@ -31,6 +30,7 @@ async function loadRegistrations() {
         }
 
         const csvText = await response.text();
+        console.log("csv: " + csvText);
         const rows = csvText.split('\n').map(row => row.split(',').map(cell => cell.replace(/"/g, '')));
 
         if (!rows || rows.length === 0) {

@@ -5,6 +5,9 @@ layout: nashhash
 last_modified_at: '2025-09-23'
 ---
 
+To register please read our important information below and complete the form at the end of this page.
+You will then be advised how to proceed to payment.
+
 ### Important
 
 * Your registration is not confirmed until payment is received!

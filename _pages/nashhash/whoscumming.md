@@ -51,7 +51,7 @@ async function loadRegistrations() {
             const row = rows[i];
             if (row.length > 0 && row[0]) { // Skip empty rows
                 html += '<tr>';
-                row.forEach((cell, index) => {
+                row.slice(0, 2).forEach((cell, index) => {
                     let cellStyle = 'border: 1px solid #ddd; padding: 8px;';
                     // First column (name) - make it bold
                     if (index === 0) {
@@ -68,6 +68,7 @@ async function loadRegistrations() {
         const confirmedCount = rows.length - 1;
         html = `<p><strong>${confirmedCount} confirmed registration${confirmedCount !== 1 ? 's' : ''}</strong></p>` + html;
 
+        html += `<p>${rows[0][4]} submitted, ${rows[0][6]} with accomodation</p>`
         // Show results
         loadingEl.style.display = 'none';
         tableEl.innerHTML = html;

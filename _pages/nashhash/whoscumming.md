@@ -14,7 +14,7 @@ last_modified_at: '2025-09-23'
 <script>
 // Replace SHEET_ID with your public Google Sheet ID
 // Get this from your Google Sheets URL: https://docs.google.com/spreadsheets/d/SHEET_ID/edit
-const SHEET_ID = '12fO-bjCD2wLRK3NdYq0C8046cM2UQ2yeR1XlsZJt5wo';
+const SHEET_ID = '1-rX1sPHbv8Veuw4FqF6zIp3ujcHk-jOd240jvg4HZzg';
 // CSV export gets all data, no range needed
 
 async function loadRegistrations() {

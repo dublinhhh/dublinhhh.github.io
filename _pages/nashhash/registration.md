@@ -22,7 +22,9 @@ You will then be advised how to proceed to payment.
     * Ireland is not in the European Schengen travel zone
     * Please ensure you have the correct documentation to travel
     * There is a common travel area between the UK and Ireland. Despite this some airlines will only accept a passport as an ID
-    * For more information on travel to Ireland see  https://www.irishimmigration.ie/  
+    * For more information on travel to Ireland see  https://www.irishimmigration.ie/
+* Registrations are limited to 150 people
+    * Once registrations are full, we will automatically add you to the wait list and contact you if spaces become available
 
 #### Disclaimer
 Hashing is NOT a guided activity, nor is it led by professionals. If you take part in a Hash run or walk you do so of your own free will, voluntarily and fully aware that it is not guided.

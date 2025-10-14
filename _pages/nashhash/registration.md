@@ -12,6 +12,7 @@ You will then be advised how to proceed to payment.
 
 * Your registration is not confirmed until payment is received!
 * Payment instructions will be included with the response to your form submission
+* Include your nerd name as the *reference* on any bank transfers so we know who is paying!
 * Once payment is confirmed your name will appear on the "Who's Cumming?" page
     * Please be patient -- registrations are confirmed manually
 * We cannot refund your registration but you can transfer to another hasher if needed (contact us for details)

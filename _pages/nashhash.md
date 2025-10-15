@@ -2,6 +2,7 @@
 permalink: "/nashhash"
 title: Irish Nash Hash
 layout: nashhash
+robots: noindex, nofollow
 last_modified_at: '2025-10-08'
 ---
 

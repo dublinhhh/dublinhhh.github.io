@@ -2,6 +2,7 @@
 permalink: "/nashhash/registration"
 title: Irish Nash Hash - Registration
 layout: nashhash
+robots: noindex, nofollow
 last_modified_at: '2025-09-23'
 ---
 

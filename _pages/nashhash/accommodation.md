@@ -2,6 +2,7 @@
 permalink: "/nashhash/accommodation"
 title: Irish Nash Hash - Accommodation
 layout: nashhash
+robots: noindex, nofollow
 last_modified_at: '2025-09-23'
 ---
 

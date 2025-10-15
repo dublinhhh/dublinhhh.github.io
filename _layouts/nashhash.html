@@ -4,6 +4,10 @@ classes: wide full-width
 sidebar: false
 ---
 
+{% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+{% endif %}
+
 <div class="dh3-header">
   <a href="/nashhash" class="dh3-title">Irish Nash Hash - Celebrating 40 years of The Dublin Hash House Harriers</a>
 </div>

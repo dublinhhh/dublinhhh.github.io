@@ -2,6 +2,7 @@
 permalink: "/nashhash/programme"
 title: Irish Nash Hash - Programme
 layout: nashhash
+robots: noindex, nofollow
 last_modified_at: '2025-09-23'
 ---
 

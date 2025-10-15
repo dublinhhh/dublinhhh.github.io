@@ -2,6 +2,7 @@
 permalink: "/nashhash/faq"
 title: Irish Nash Hash - FAQ
 layout: nashhash
+robots: noindex, nofollow
 last_modified_at: '2025-09-23'
 ---
 

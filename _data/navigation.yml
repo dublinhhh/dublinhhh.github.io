@@ -1,9 +1,13 @@
 main:
+  - title: Nash Hash
+    url: /nashhash
   - title: Hareline
     url: /hareline
   - title: Contact
     url: /contact
 links:
+  - title: Nash Hash
+    url: /nashhash
   - title: Hareline
     url: /hareline
   - title: Run Archive

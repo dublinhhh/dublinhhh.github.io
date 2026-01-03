@@ -6,22 +6,17 @@ robots: noindex, nofollow
 last_modified_at: '2025-09-23'
 ---
 
-To register please read our important information below and complete the form at the end of this page.
-You will then be advised how to proceed to payment.
+Registration for this event is now full.  We have more people waiting than we are likely to get cancellations.   
+
+If you already got an email saying you are on our waiting list this remains valid. You may still get a place if someone cancels.  
+
 
 ### Important
 
-* Your registration is not confirmed until payment is received!
-* Payment instructions will be included with the response to your form submission
-  * If your reply says you are on our waiting list, panic not!  We will be
-    opening more slots in the next 2 -3 weeks.  Priority is given to those on
-    the waiting list based on date and time the registration form was
-    completed.  Whether you asked to register with or without accommodation is
-    irrelevant.
-* Include your full nerd name and hash name as the *reference* on any bank transfers so we know who is paying!
-* Once payment is confirmed your name will appear on the "Who's Cumming?" page
-    * Please be patient -- registrations are confirmed manually
-* We cannot refund your registration but you can transfer to another hasher if needed (contact us for details)
+* Selling your registration
+    * If you already paid and can no longer attend, you can transfer your registration to another hasher. Please email us with the other Hasher's details and we will contact them directly.  Once your name is off the "Who's coming" list and the other hasher's name appears, their registration is confirmed.  You can ask them to pay you the same fee as you paid us.   
+    * If you do not have someone else to sell your registration to let us know and we will try and sell it to someone on the waiting list.  Once we receive payment from the person on the waiting list we will refund you.  
+    * We can not refund you until someone takes your registration. 
 * Minimum Age
     * In keeping with Irish law, this event is only suitable for adults over 18 years
 * Travel Documents
@@ -29,8 +24,6 @@ You will then be advised how to proceed to payment.
     * Please ensure you have the correct documentation to travel
     * There is a common travel area between the UK and Ireland. Despite this some airlines will only accept a passport as an ID
     * For more information on travel to Ireland see  https://www.irishimmigration.ie/
-* Registrations are limited to 150 people
-    * Once registrations are full, we will automatically add you to the wait list and contact you if spaces become available
 
 #### Disclaimer
 Hashing is NOT a guided activity, nor is it led by professionals. If you take part in a Hash run or walk you do so of your own free will, voluntarily and fully aware that it is not guided.
@@ -38,21 +31,3 @@ Hashing is NOT a guided activity, nor is it led by professionals. If you take pa
 The Dublin Hash House Harriers merely schedules the activity and publishes details of the same.
 
 We remind you that running, especially in mountains or outdoor areas, carries inherent risks. By taking part, you accept those risks and are responsible for your safety.
-
-<style>
-.registration-form {
-  width: 100%;
-  max-width: 1200px;
-  height: 3549px;
-}
-
-@media (max-width: 768px) {
-  .registration-form {
-    height: 4000px;
-  }
-}
-</style>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJSZQJZ8QzKnBqnIqqZk5DvzF0hVv_HT02-h4U4NbAeUtIDQ/viewform?embedded=true" class="registration-form" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-<br>

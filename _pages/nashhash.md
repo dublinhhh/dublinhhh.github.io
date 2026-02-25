@@ -30,16 +30,6 @@ last_modified_at: '2025-10-08'
 
 ### What is included in your registration:
 
-<div class="registration-box">
-  <h4 style="margin-top: 0;">Registration Cost</h4>
-  <p><strong>With accommodation:</strong><br>
-  €312 until 31st December<br>
-  €325 after 31st December</p>
-  <p><strong>Without accommodation:</strong><br>
-  €135 until 31st December<br>
-  €150 after 31st December</p>
-</div>
-
 #### Friday 3rd July 2026:
 * Trail with circle starting 7:30pm
 * Light meal

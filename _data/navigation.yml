@@ -1,10 +1,10 @@
 main:
   - title: Nash Hash
     url: /nashhash
-  - title: Hareline
-    url: /hareline
   - title: Contact
     url: /contact
+  - title: Hareline
+    url: /hareline
 links:
   - title: Nash Hash
     url: /nashhash

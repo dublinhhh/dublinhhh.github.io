@@ -28,25 +28,30 @@ last_modified_at: '2025-10-08'
 }
 </style>
 
-### What is included in your registration:
+<b>Please note:</b> More detailed agenda and accommodation details will be emailed to all registered in the 1st week of June 2026.
 
 #### Friday 3rd July 2026:
-* Trail with circle starting 7:30pm
+
+* Registration late afternoon
+* Trail with circle starting 7:00pm
 * Light meal
 
 #### Saturday 4th July 2026:
+
 * Variety of trails to choose from
-* Beer stop with lunch
-* After run circle
+* Beer stop
+* After run circle with lunch
 * Dinner and party Saturday night
 
 #### Sunday 5th July 2026:
+
 * Morning trail with circle
-* Snacks / Light Lunch at the circle
+* Snacks
 
 ### <i>PLUS</i>
+
 * Goody bag
 * Cost of local transport (as required) to and from trails
 * Free beer and soft drinks on trail
 * Beer / drink tokens for use in the bar in Friday and Saturday night
-* Two nights accommodation when booked 
+* Two nights accommodation when booked

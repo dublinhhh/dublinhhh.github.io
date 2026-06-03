@@ -27,7 +27,7 @@ More details later....
 
 ### Friday 3rd July 2026
 
-Meet at 7:30pm in a city centre pub followed by trail and pub food
+Meet at 7:00pm in a city centre pub followed by trail and pub food
 
 ### Saturday 4th July 2026
 

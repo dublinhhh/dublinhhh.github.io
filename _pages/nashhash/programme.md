@@ -23,11 +23,13 @@ us.  We promise 3 days of runs, beer, walks, food, fun and partying.
 
 ## Schedule of Events
 
-More details later....
+### Thursday 2nd July 2026
+* **19:30** Pub crawl starting from [Toners Pub, Baggott St, Dublin 2](https://maps.app.goo.gl/Eohw3P5DuWBpjcZh6)
+
 
 ### Friday 3rd July 2026
-
-Meet at 7:00pm in a city centre pub followed by trail and pub food
+* **17:00-18:30**  Registration 
+* **19:00** Trail starts followed by light meal
 
 ### Saturday 4th July 2026
 
@@ -36,7 +38,7 @@ Meet at 7:00pm in a city centre pub followed by trail and pub food
 * Afternoon circle before heading back to city centre accommodation
 * Meet early evening at party venue
     * Drinks, food, music and dancing until the small hours
-    * Party theme to be announced later
+    * Party theme: *40 shades of Green*
 
 ### Sunday 5th July 2026
 

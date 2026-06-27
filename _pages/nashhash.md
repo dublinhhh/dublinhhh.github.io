@@ -28,13 +28,18 @@ last_modified_at: '2025-10-08'
 }
 </style>
 
-<b>Please note:</b> More detailed agenda and accommodation details will be emailed to all registered in the 1st week of June 2026.
+<b>Please note:</b>
+Accommodation location and how to find Registration was emailed to everyone on 5th June.
+If you did not get this let us know at email [irishnashhash2025@gmail.com](mailto:irishnashhash2025@gmail.com)
+
+#### Thursday 2nd July 2026:
+* **19:30** Pub crawl starting from [Toners Pub, Baggott St, Dublin 2](https://maps.app.goo.gl/Eohw3P5DuWBpjcZh6) to meet people arriving early.<br>See the Irish Nash Hash WhatsApp (link emailed to everyone early June)
 
 #### Friday 3rd July 2026:
 
-* Registration late afternoon
-* Trail with circle starting 7:00pm
-* Light meal
+* **17:00-18:30**  Registration
+* **19:00** Trail starts
+* Circle followed by light meal
 
 #### Saturday 4th July 2026:
 

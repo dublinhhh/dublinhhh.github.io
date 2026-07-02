@@ -3,8 +3,8 @@ permalink: "/nashhash/breakfast"
 title: Irish Nash Hash - Breakfast Options
 layout: nashhash
 robots: noindex, nofollow
+last_modified_at: '2026-07-02'
 ---
-
 # Breakfast Options, Dublin City Centre
 
 Again there are many options but here is a selection.

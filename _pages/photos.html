@@ -2,7 +2,6 @@
 layout: splash
 permalink: /photos
 title: Photos
-last_modified_at: 2023-01-01
 ---
 
 {% assign photosInYear = site.photos | group_by_exp: 'photo', 'photo.date | date: "%Y"' %}

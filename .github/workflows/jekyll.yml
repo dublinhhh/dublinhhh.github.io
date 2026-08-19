@@ -42,8 +42,6 @@ jobs:
               # this forces them to be quoted and thus treated as a string
               # we must do this before loading the yaml with ruby
               sed -i -E "s/^time: ([0-9]{1,2}:[0-9]{2}.*)/time: '\1'/" "$file"
-
-              # update photo gallery of runs if applicable
               bundle exec ruby process_front_matter.rb "$file"
             fi
           done

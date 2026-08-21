@@ -1,6 +1,6 @@
 ---
 permalink: "/nashhash/faq"
-title: Irish Nash Hash - FAQ
+title: Irish Nash Hash 2026 - FAQ
 layout: nashhash
 robots: noindex, nofollow
 last_modified_at: '2025-09-23'

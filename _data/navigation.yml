@@ -1,13 +1,7 @@
 main:
-  - title: Nash Hash
-    url: /nashhash
-  - title: Contact
-    url: /contact
   - title: Hareline
     url: /hareline
 links:
-  - title: Nash Hash
-    url: /nashhash
   - title: Hareline
     url: /hareline
   - title: Run Archive
@@ -20,6 +14,8 @@ links:
     url: /contact
   - title: Hash History
     url: /history
+  - title: Nash Hash
+    url: /nashhash
   - title: Other Hashes
     url: /hashlinks
   - title: Tourist Info

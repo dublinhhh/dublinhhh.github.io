@@ -1,6 +1,6 @@
 ---
 permalink: "/nashhash/breakfast"
-title: Irish Nash Hash - Breakfast Options
+title: Irish Nash Hash 2026 - Breakfast Options
 layout: nashhash
 robots: noindex, nofollow
 last_modified_at: '2026-07-02'

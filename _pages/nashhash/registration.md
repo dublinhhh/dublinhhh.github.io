@@ -1,6 +1,6 @@
 ---
 permalink: "/nashhash/registration"
-title: Irish Nash Hash - Registration
+title: Irish Nash Hash 2026 - Registration
 layout: nashhash
 robots: noindex, nofollow
 last_modified_at: '2025-09-23'

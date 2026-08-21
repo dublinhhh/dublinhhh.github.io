@@ -1,6 +1,6 @@
 ---
 permalink: "/nashhash/whoscumming"
-title: Irish Nash Hash - Who's Cumming?
+title: Irish Nash Hash 2026 - Who's Cumming?
 layout: nashhash
 robots: noindex, nofollow
 last_modified_at: '2025-09-23'
